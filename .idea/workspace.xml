@@ -1,0 +1,1323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f4c81c08-a263-4cda-af05-07cf1908de15" name="变更" comment="a version without login/logout/admin">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/JPASupport-project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b30fe16f-97fb-44ba-a711-51f2601a2094.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-admin/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-blog/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/BlogApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/ArticleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/LinkController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-blog/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/constants/SystemConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/ResponseResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Article.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Link.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/ArticleDetailVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/ArticleListVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/CategoryVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/HotArticleVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/LinkVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/PageVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/enums/AppHttpCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/ArticleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/LinkMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/ArticleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/LinkService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/LinkServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/utils/BeanCopyUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/.env.development" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/.env.production" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/.postcssrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/config/dev.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/config/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/config/prod.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/fonts/element-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/aboutme.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/aimee/QQ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/aimee/erwm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/aimee/gzh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/aimee/meishi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/aimee/wechat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/aini.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/baibai.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/baiyan.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/baobao.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/beishang.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/bishi.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/bizui.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/caonima.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/chanzui.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/chijing.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/dangao.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/fahongbao.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/fennu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/fuyun.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/ganmao.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/geili.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/good.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/guzhang.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/haha.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/haixiu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/han.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/haqian.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/heixian.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/heng.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/huatong.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/hufen.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/jiong.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/jiyan.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/keai.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/kelian.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/ku.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/kun.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/lai.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/lazhu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/lei.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/no.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/nu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/numa.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/ok.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/qian.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/qinqin.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/ruo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/se.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/shangxin.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/shengbing.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/shenma.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/shiwang.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/shuai.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/shudaizi.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/shui.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/sikao.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/taikaixin.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/touxiao.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/tu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/tuzi.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/wabi.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/weiguan.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/weiqu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/weiwu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/weixiao.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/xin.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/xiongmao.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/xixi.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/xu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/ye.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/yinxian.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/yiwen.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/youhengheng.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/yun.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/zan.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/zhu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/zhuakuang.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/zuohengheng.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/footer01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/head.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/headbg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/headbg02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/headbg03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/headbg04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/headbg05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/headtou.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/headtou02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/heart.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/heart02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/long.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/mao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/maoto.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/message0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/qinlh/qq.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/qinlh/wechat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/scroll.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/snjz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/timg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/tou.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/tou.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/upto.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/web.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/10.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/8.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/9.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/manifest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/shCore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/vendor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/api/article.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/api/category.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/api/comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/api/link.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/api/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/assets/css/shCoreDefault.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/assets/css/sigmar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/assets/css/style.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/components/articleDetail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/components/articlelist.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/components/friends.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/components/header.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/components/message.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/components/reward.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/components/rightlist.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/pages/DetailArticle.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/pages/FriendsLink.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/pages/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/pages/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/pages/Reward.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/pages/Share.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/pages/UserInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/utils/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/utils/errorCode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/utils/plug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/utils/request.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/utils/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/utils/theater.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/src/vue.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/ali_pay.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/coffee.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/aini.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/baibai.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/baiyan.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/baobao.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/beishang.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/bishi.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/bizui.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/caonima.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/chanzui.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/chijing.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/dangao.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/fahongbao.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/fennu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/fuyun.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/ganmao.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/geili.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/good.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/guzhang.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/haha.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/haixiu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/han.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/haqian.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/heixian.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/heng.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/huatong.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/hufen.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/jiong.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/jiyan.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/keai.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/kelian.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/ku.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/kun.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/lai.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/lazhu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/lei.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/no.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/nu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/numa.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/ok.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/qian.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/qinqin.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/ruo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/se.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/shangxin.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/shengbing.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/shenma.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/shiwang.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/shuai.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/shudaizi.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/shui.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/sikao.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/taikaixin.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/touxiao.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/tu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/tuzi.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/wabi.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/weiguan.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/weiqu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/weiwu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/weixiao.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/xin.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/xiongmao.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/xixi.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/xu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/ye.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/yinxian.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/yiwen.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/youhengheng.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/yun.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/zan.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/zhu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/zhuakuang.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/zuohengheng.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/headbg05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/heart02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/img01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/long.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/qq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/scroll.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/tou.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/tou.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/upto.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/web.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/wx_pay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue/static/js/shCore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/EasyCode/lib/EasyCode-1.2.8-RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/EasyCode/lib/jackson-annotations-2.9.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/EasyCode/lib/jackson-core-2.9.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/EasyCode/lib/jackson-databind-2.9.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/EasyCode/lib/searchableOptions-1.2.8-RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/mysql-connector-java-8.0.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/blog-blog/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/blog-framework/target/" />
+    <ignored path="$PROJECT_DIR$/blog-admin/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/blog$BlogApplication.ic" NAME="BlogApplication Coverage Results" MODIFIED="1688051207510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.blog.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="my_blog@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="my_blog@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="my_blog@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="my_blog: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog-blog/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog-admin/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog-framework/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog-vue/src/api/article.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Loftin" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/entity/Article.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com/blog/service/service/impl/ArticleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com/blog/mapper/ArticleMapper.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/test/java/com/blog/service/impl/ArticleServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/blog-blog/src/main/resources/META-INF/additional-spring-configuration-metadata.json" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com/blog/eunms/AppHttpCodeEnum.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com/blog/enums/AppHttpCodeEnum.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com/blog/domain/ResponseResult.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com/blog/config/WebConfig.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com/blog/domain/vo/hotArticleVo.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com/blog/utils/BeanCopyUtils.java" />
+        <option value="$PROJECT_DIR$/blog-blog/src/main/java/com/blog/controller/CategoryController.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com/blog/constants/SystemConstants.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com/blog/domain/vo/CategoryVo.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com/blog/service/impl/CategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com/blog/domain/vo/ArticleListVo.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com/blog/config/MbatisPlusConfig.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com/blog/config/MybatisPlusConfig.java" />
+        <option value="$PROJECT_DIR$/blog-blog/src/main/java/com/blog/controller/ArticleController.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com/blog/service/ArticleService.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com/blog/service/CategoryService.java" />
+        <option value="$PROJECT_DIR$/blog-blog/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com/blog/mapper/CategoryMapper.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com/blog/domain/entity/Article.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com/blog/domain/vo/PageVo.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com/blog/service/impl/ArticleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/blog-blog/src/main/java/com/blog/BlogApplication.java" />
+        <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/BlogApplication.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/config/WebConfig.java" />
+        <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/ArticleController.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/ArticleService.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/ArticleListVo.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/ArticleDetailVo.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/ArticleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/MyLinkService.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Link.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/LinkMapper.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/LinkService.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/LinkServiceImpl.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/LinkVo.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/constants/SystemConstants.java" />
+        <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/LinkController.java" />
+        <option value="$PROJECT_DIR$/blog-framework/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="blog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="blog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="45" />
+    <option name="y" value="25" />
+    <option name="width" value="1750" />
+    <option name="height" value="1030" />
+  </component>
+  <component name="ProjectId" id="2RjNpoMCpdVbflv7rOTD8FJKNAq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="false" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1688137624533" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.blog.service.impl" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.blog.service" />
+      <recent name="com.blog.service.impl" />
+      <recent name="com.blog" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\desktop\小学期2\blog\blog-blog\src\main\java" />
+      <recent name="E:\desktop\小学期2\blog\blog-blog\src" />
+      <recent name="E:\desktop\小学期2\blog\blog-blog" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\desktop\小学期2\blog\blog-blog\src\main\java\com\blog\controller" />
+      <recent name="E:\desktop\小学期2\blog\blog-framework\src\main\java\com\blog\enums" />
+      <recent name="E:\desktop\小学期2\blog\blog-framework\src\main\java\com\blog\eunms" />
+      <recent name="E:\desktop\小学期2\blog\blog-framework\src\main\java\com\blog\domain" />
+      <recent name="E:\desktop\小学期2\blog\libs" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com_bjut.blog.domain.vo" />
+      <recent name="com_bjut.blog.service" />
+      <recent name="com.blog.domain.vo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BlogApplication">
+    <configuration name="All in blog" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="blog" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="blog-blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.blog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com_bjut.blog.BlogApplication" />
+      <option name="ENABLE_JMX_AGENT" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="com.intellij.dmserver.run.DMServerRunConfigurationType:id" factoryName="Spring dmServer (Local)" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="MBeanPort" value="9875" />
+        <option name="MBeanUserName" value="admin" />
+        <mbean-port>9875</mbean-port>
+        <mbean-user>admin</mbean-user>
+      </server-settings>
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9307" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="DEBUG_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="DEBUG_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="DEBUG_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="com.intellij.dmserver.run.DMServerRunConfigurationType:id" factoryName="Spring dmServer (Remote)" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <option name="MBeanPort" value="9875" />
+        <option name="MBeanUserName" value="admin" />
+        <mbean-port>9875</mbean-port>
+        <mbean-user>admin</mbean-user>
+      </server-settings>
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9310" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.All in blog" />
+      <item itemvalue="Spring Boot.BlogApplication" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="应用程序级" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="f4c81c08-a263-4cda-af05-07cf1908de15" name="变更" comment="" />
+      <created>1687759719984</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687759719984</updated>
+      <workItem from="1687852450030" duration="427000" />
+      <workItem from="1687852979030" duration="373000" />
+      <workItem from="1687853522294" duration="68000" />
+      <workItem from="1687853617074" duration="857000" />
+      <workItem from="1687854504993" duration="6158000" />
+      <workItem from="1687918942599" duration="8182000" />
+      <workItem from="1687936784248" duration="4507000" />
+      <workItem from="1687946838387" duration="298000" />
+      <workItem from="1687955908794" duration="596000" />
+      <workItem from="1688018534488" duration="3164000" />
+      <workItem from="1688024325224" duration="1471000" />
+      <workItem from="1688044526871" duration="5923000" />
+      <workItem from="1688055775057" duration="14266000" />
+      <workItem from="1688346534698" duration="1878000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="48168000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="设计器" order="0" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.23566434" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="调试" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3297587" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.8475524" weight="0.17560321" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.8545455" weight="0.5294906" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49720278" weight="0.3297587" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4993007" weight="0.3297587" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5013986" side_tool="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4993007" weight="0.3297587" />
+      <window_info anchor="bottom" id="Database Console" order="15" sideWeight="0.4986014" weight="0.3297587" />
+      <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.4902098" weight="0.29088473" />
+      <window_info anchor="right" id="调色板" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.24965034" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.2055944" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.16923077" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="a version without login/logout/admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="a version without login/logout/admin" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="das://4063cc1f-0cba-4168-a566-a0d62b37f962/schema/blog/table/article" />
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com/blog/mapper/Article.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.5.3.1/mybatis-plus-extension-3.5.3.1.jar!/com/baomidou/mybatisplus/extension/parser/JsqlParserSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4063cc1f-0cba-4168-a566-a0d62b37f962/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-279" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/test/java/com/blog/service/impl/ArticleServiceImplTest.java" />
+    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/resources/META-INF/additional-spring-configuration-metadata.json" />
+    <entry file="das://b30fe16f-97fb-44ba-a711-51f2601a2094/schema/my_blog/table/my_article">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b30fe16f-97fb-44ba-a711-51f2601a2094/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.25/mysql-connector-java-8.0.25.jar!/com/mysql/cj/jdbc/ConnectionImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="632" selection-start-line="632" selection-end-line="632" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com/blog/eunms/AppHttpCodeEnum.java" />
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/enums/AppHttpCodeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/utils/BeanCopyUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b30fe16f-97fb-44ba-a711-51f2601a2094/schema/my_blog/table/my_category">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/ArticleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/config/MybatisPlusConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="41" column="56" lean-forward="true" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.5.3.1/mybatis-plus-extension-3.5.3.1.jar!/com/baomidou/mybatisplus/extension/service/IService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="137" column="14" selection-start-line="137" selection-start-column="14" selection-end-line="137" selection-end-column="14" />
+          <folding>
+            <element signature="e#4832#4833#0" expanded="true" />
+            <element signature="e#4890#4891#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/CategoryVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/CategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/PageVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="40" column="60" lean-forward="true" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/ResponseResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/ArticleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/ArticleListVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/HotArticleVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/MyLinkService.java" />
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/LinkMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../SGBlog-main/sangeng-framework/src/main/java/com/sangeng/domain/vo/LinkVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" selection-start-line="6" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b30fe16f-97fb-44ba-a711-51f2601a2094/schema/my_blog/table/my_link">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/ArticleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="103" column="56" lean-forward="true" selection-start-line="103" selection-start-column="56" selection-end-line="103" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#hotArticleList#0;class#ArticleServiceImpl#0" />
+            <element signature="method#articleList#0;class#ArticleServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/LinkVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/ArticleDetailVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/constants/SystemConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Link.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Article.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="31" selection-start-line="31" selection-end-line="32" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/BlogApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/LinkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/ArticleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/CategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/LinkServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/LinkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-admin/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-vue/src/api/article.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>blog-framework</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>libs</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

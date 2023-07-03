@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoGeneratorSettingsState">
+    <option name="ignoredFields">
+      <set>
+        <option value="" />
+      </set>
+    </option>
+    <option name="moduleName" value="blog-framework" />
+    <option name="moduleNameToSettings">
+      <map>
+        <entry key="blog">
+          <value>
+            <ModuleSettings />
+          </value>
+        </entry>
+        <entry key="blog-framework">
+          <value>
+            <ModuleSettings>
+              <option name="controllerParentDirectory" value="$PROJECT_DIR$/blog-framework/src/main/java" />
+              <option name="dtoParentDirectory" value="$PROJECT_DIR$/blog-framework/src/main/java" />
+              <option name="entityPackageName" value="com.blog" />
+              <option name="entityParentDirectory" value="$PROJECT_DIR$/blog-framework/src/main/java" />
+              <option name="mapperXmlParentDirectory" value="E:\desktop\小学期2\blog\blog-framework\src\main\resources" />
+              <option name="repositoryPackageName" value="com.blog" />
+              <option name="repositoryParentDirectory" value="$PROJECT_DIR$/blog-framework/src/main/java" />
+              <option name="serviceParentDirectory" value="$PROJECT_DIR$/blog-framework/src/main/java" />
+              <option name="voParentDirectory" value="$PROJECT_DIR$/blog-framework/src/main/java" />
+            </ModuleSettings>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="DatabaseSettingsState">
+    <option name="database" value="blog@localhost" />
+    <option name="driverClass" value="com.mysql.jdbc.Driver" />
+    <option name="driverPath" value="E:\desktop\小学期2\blog\libs\mysql-connector-java-8.0.25.jar" />
+    <option name="schema" value="blog-blog" />
+    <option name="url" value="jdbc:mysql://localhost:3306/blog" />
+  </component>
+</project>
