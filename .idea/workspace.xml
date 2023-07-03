@@ -4,321 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4c81c08-a263-4cda-af05-07cf1908de15" name="变更" comment="a version without login/logout/admin">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/JPASupport-project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b30fe16f-97fb-44ba-a711-51f2601a2094.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-blog/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/BlogApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/ArticleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/LinkController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-blog/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/constants/SystemConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/ResponseResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Article.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Link.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/ArticleDetailVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/ArticleListVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/CategoryVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/HotArticleVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/LinkVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/PageVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/enums/AppHttpCodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/ArticleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/CategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/LinkMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/ArticleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/LinkService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/ArticleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/LinkServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/utils/BeanCopyUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/.env.development" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/.env.production" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/.postcssrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/config/dev.env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/config/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/config/prod.env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/fonts/element-icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/aboutme.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/aimee/QQ.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/aimee/erwm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/aimee/gzh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/aimee/meishi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/aimee/wechat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/aini.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/baibai.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/baiyan.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/baobao.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/beishang.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/bishi.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/bizui.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/caonima.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/chanzui.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/chijing.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/dangao.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/fahongbao.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/fennu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/fuyun.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/ganmao.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/geili.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/good.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/guzhang.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/haha.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/haixiu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/han.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/haqian.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/heixian.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/heng.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/huatong.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/hufen.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/jiong.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/jiyan.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/keai.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/kelian.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/ku.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/kun.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/lai.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/lazhu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/lei.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/no.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/nu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/numa.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/ok.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/qian.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/qinqin.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/ruo.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/se.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/shangxin.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/shengbing.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/shenma.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/shiwang.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/shuai.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/shudaizi.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/shui.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/sikao.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/taikaixin.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/touxiao.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/tu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/tuzi.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/wabi.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/weiguan.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/weiqu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/weiwu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/weixiao.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/xin.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/xiongmao.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/xixi.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/xu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/ye.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/yinxian.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/yiwen.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/youhengheng.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/yun.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/zan.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/zhu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/zhuakuang.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/emot/image/zuohengheng.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/footer01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/head.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/headbg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/headbg02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/headbg03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/headbg04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/headbg05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/headtou.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/headtou02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/heart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/heart.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/heart02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/long.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/mao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/maoto.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/message0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/qinlh/qq.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/qinlh/wechat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/scroll.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/snjz.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/timg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/tou.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/tou.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/upto.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/img/web.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/10.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/8.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/9.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/manifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/shCore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/dist/static/js/vendor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/api/article.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/api/category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/api/comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/api/link.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/api/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/assets/css/shCoreDefault.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/assets/css/sigmar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/assets/css/style.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/components/articleDetail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/components/articlelist.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/components/friends.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/components/header.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/components/message.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/components/reward.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/components/rightlist.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/pages/DetailArticle.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/pages/FriendsLink.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/pages/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/pages/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/pages/Reward.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/pages/Share.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/pages/UserInfo.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/utils/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/utils/errorCode.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/utils/plug.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/utils/request.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/utils/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/utils/theater.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/src/vue.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/ali_pay.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/coffee.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/aini.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/baibai.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/baiyan.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/baobao.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/beishang.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/bishi.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/bizui.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/caonima.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/chanzui.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/chijing.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/dangao.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/fahongbao.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/fennu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/fuyun.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/ganmao.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/geili.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/good.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/guzhang.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/haha.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/haixiu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/han.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/haqian.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/heixian.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/heng.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/huatong.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/hufen.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/jiong.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/jiyan.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/keai.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/kelian.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/ku.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/kun.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/lai.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/lazhu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/lei.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/no.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/nu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/numa.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/ok.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/qian.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/qinqin.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/ruo.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/se.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/shangxin.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/shengbing.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/shenma.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/shiwang.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/shuai.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/shudaizi.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/shui.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/sikao.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/taikaixin.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/touxiao.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/tu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/tuzi.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/wabi.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/weiguan.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/weiqu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/weiwu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/weixiao.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/xin.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/xiongmao.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/xixi.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/xu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/ye.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/yinxian.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/yiwen.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/youhengheng.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/yun.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/zan.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/zhu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/zhuakuang.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/emot/image/zuohengheng.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/headbg05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/heart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/heart02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/img01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/long.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/qq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/scroll.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/tou.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/tou.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/upto.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/web.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/img/wx_pay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-vue/static/js/shCore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/EasyCode/lib/EasyCode-1.2.8-RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/EasyCode/lib/jackson-annotations-2.9.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/EasyCode/lib/jackson-core-2.9.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/EasyCode/lib/jackson-databind-2.9.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/EasyCode/lib/searchableOptions-1.2.8-RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/mysql-connector-java-8.0.25.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f4c81c08-a263-4cda-af05-07cf1908de15" name="变更" comment="a version without login/logout/admin" />
     <ignored path="$PROJECT_DIR$/blog-blog/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/blog-framework/target/" />
@@ -368,53 +54,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog-blog/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog-admin/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog-framework/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blog-vue/src/api/article.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -558,7 +198,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1688137624533" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1688349683433" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -743,12 +383,20 @@
       <workItem from="1688024325224" duration="1471000" />
       <workItem from="1688044526871" duration="5923000" />
       <workItem from="1688055775057" duration="14266000" />
-      <workItem from="1688346534698" duration="1878000" />
+      <workItem from="1688346534698" duration="2741000" />
     </task>
+    <task id="LOCAL-00001" summary="a version without login/logout/admin">
+      <created>1688348728885</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688348728885</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48168000" />
+    <option name="totallyTimeSpent" value="49031000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -761,10 +409,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
+      <window_info id="Repositories" weight="0.19300699" />
       <window_info id="设计器" order="0" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.23566434" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23566434" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
@@ -805,9 +453,39 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -817,10 +495,23 @@
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
               </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
             </State>
           </value>
         </entry>
       </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
     </option>
     <option name="RECENT_FILTERS">
       <map>
@@ -838,6 +529,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="a version without login/logout/admin" />
     <option name="LAST_COMMIT_MESSAGE" value="a version without login/logout/admin" />
   </component>
@@ -1197,24 +890,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog-blog/pom.xml">
+    <entry file="file://$PROJECT_DIR$/blog-vue/src/api/article.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-admin/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        <state relative-caret-position="361">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1225,10 +904,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog-vue/src/api/article.js">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="570">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-admin/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
