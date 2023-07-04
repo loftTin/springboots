@@ -50,7 +50,7 @@ export default new Router({
 				auth: true
 			},
 			name: 'DetailArticle'
-		}, //分享详情
+		}, //分类详情
 		{
 			path: '/Reward',
 			component: resolve => require(['../pages/Reward.vue'], resolve),
