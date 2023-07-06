@@ -1,5 +1,6 @@
 package com_bjut.blog.controller;
 
+import com_bjut.blog.annotation.SystemLog;
 import com_bjut.blog.domain.ResponseResult;
 import com_bjut.blog.domain.entity.User;
 import com_bjut.blog.service.UserService;
@@ -19,6 +20,7 @@ public class UserController {
     }
 
     @PutMapping("/userInfo")
+    @SystemLog(businessName = "更新用户信息")
     public ResponseResult updateUserInfo(@RequestBody User user){
         return userService.updateUserInfo(user);
     }
