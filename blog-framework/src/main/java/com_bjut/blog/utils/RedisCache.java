@@ -188,6 +188,10 @@ public class RedisCache
         redisTemplate.opsForHash().put(key, hKey, value);
     }
 
+    public void incrementCacheMapValue(String key,String hKey,long v){
+        redisTemplate.boundHashOps(key).increment(hKey, v);
+    }
+
     /**
      * 获取Hash中的数据
      *

@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4c81c08-a263-4cda-af05-07cf1908de15" name="变更" comment="a version with login/logout and without admin">
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/annotation/SystemLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/aspect/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/job/TestJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/job/updataViewCountJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/runner/TestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/runner/ViewCountRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/BlogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/BlogApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/utils/RedisCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/utils/RedisCache.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/blog-blog/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,10 +68,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/UserServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/ArticleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-622">
-              <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+            <state relative-caret-position="247">
+              <caret line="34" column="41" lean-forward="true" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+              <folding>
+                <element signature="e#863#864#0" expanded="true" />
+                <element signature="e#920#921#0" expanded="true" />
+                <element signature="e#864#865#0" expanded="true" />
+                <element signature="e#922#923#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/ArticleService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,22 +95,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/annotation/SystemLog.java">
+        <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/ArticleServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            <state relative-caret-position="233">
+              <caret line="98" column="28" selection-start-line="98" selection-start-column="28" selection-end-line="98" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/utils/RedisCache.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-109">
+              <caret line="190" column="16" selection-start-line="190" selection-start-column="16" selection-end-line="190" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/aspect/LogAspect.java">
+        <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/LinkController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="50" column="124" lean-forward="true" selection-start-line="50" selection-start-column="124" selection-end-line="50" selection-end-column="124" />
+            <state relative-caret-position="38">
+              <caret line="7" column="62" lean-forward="true" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/job/updataViewCountJob.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="33" column="49" lean-forward="true" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,33 +137,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#753#754#0" expanded="true" />
-                <element signature="e#802#803#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.7/spring-web-5.3.7.jar!/org/springframework/web/context/request/RequestAttributes.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar!/org/aspectj/lang/annotation/Around.class">
+        <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/runner/TestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="12" selection-start-line="12" selection-end-line="13" selection-end-column="29" />
+              <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,28 +149,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/User.java">
+        <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Article.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+            <state relative-caret-position="230">
+              <caret line="63" column="35" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/UserMapper.java">
+        <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/job/TestJob.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="266">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/runner/ViewCountRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="-14">
+              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -184,17 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/LinkServiceImpl.java" />
-        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/LinkVo.java" />
-        <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/LinkController.java" />
-        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/config/RedisConfig.java" />
-        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/BlogUserLoginVo.java" />
-        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/UserInfoVo.java" />
-        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/LoginUser.java" />
-        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/ArticleService.java" />
-        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/UserDetailsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/filter/JwtAuthenticationTokenFilter.java" />
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/utils/WebUtils.java" />
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/utils/JwtUtil.java" />
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/handler/security/AuthenticationEntryPointImpl.java" />
@@ -235,6 +247,17 @@
         <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/UserController.java" />
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/annotation/SystemLog.java" />
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/aspect/LogAspect.java" />
+        <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/runner/TestRunner.java" />
+        <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/BlogApplication.java" />
+        <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/job/TestJob.java" />
+        <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/job/ViewCountRunner.java" />
+        <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/ArticleController.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/ArticleService.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/utils/RedisCache.java" />
+        <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/runner/ViewCountRunner.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Article.java" />
+        <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/job/updataViewCountJob.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/ArticleServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -284,10 +307,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="47" />
-    <option name="y" value="82" />
-    <option name="width" value="1750" />
-    <option name="height" value="1030" />
+    <option name="x" value="107" />
+    <option name="width" value="939" />
+    <option name="height" value="1098" />
   </component>
   <component name="ProjectId" id="2RjNpoMCpdVbflv7rOTD8FJKNAq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -361,7 +383,18 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="job" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="runner" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
@@ -525,7 +558,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1688611602564" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1688629886970" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -536,7 +569,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -563,6 +596,9 @@
       <recent name="E:\desktop\小学期2\blog\blog-framework\src\main\java\com_bjut\blog\config" />
       <recent name="E:\desktop\小学期2\blog\blog-blog\src\main\java\com\blog\controller" />
       <recent name="E:\desktop\小学期2\blog\blog-framework\src\main\java\com\blog\enums" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com_bjut.blog.runner" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com_bjut.blog.domain.vo" />
@@ -818,7 +854,7 @@
       <workItem from="1688024325224" duration="1471000" />
       <workItem from="1688044526871" duration="5923000" />
       <workItem from="1688055775057" duration="14266000" />
-      <workItem from="1688346534698" duration="54506000" />
+      <workItem from="1688346534698" duration="64368000" />
     </task>
     <task id="LOCAL-00001" summary="a version without login/logout/admin">
       <created>1688348728885</created>
@@ -848,7 +884,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688542170865</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="a version with login/logout and without admin">
+      <created>1688611625976</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688611625976</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -872,7 +915,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100796000" />
+    <option name="totallyTimeSpent" value="110658000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -885,11 +928,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Repositories" order="0" weight="0.19300699" />
       <window_info id="设计器" order="1" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.13636364" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.23916084" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="4" />
       <window_info id="Image Layers" order="5" />
@@ -900,20 +942,20 @@
       <window_info anchor="bottom" id="调试" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.09517426" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.7006993" visible="true" weight="0.52815014" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.7006993" weight="0.44906166" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.8545455" weight="0.33109918" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49720278" weight="0.3297587" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3297587" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.6391608" weight="0.47587132" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.6391608" visible="true" weight="0.47587132" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.2993007" side_tool="true" weight="0.18230563" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4993007" weight="0.4235925" />
       <window_info anchor="bottom" id="Database Console" order="15" sideWeight="0.4986014" weight="0.3297587" />
-      <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.4902098" weight="0.28820375" />
+      <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.4902098" weight="0.26675603" />
       <window_info anchor="right" id="调色板" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.24965034" />
@@ -1021,104 +1063,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/CategoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/ArticleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1133">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/CategoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/LinkServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/BlogLoginServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="57" column="50" lean-forward="true" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/service/impl/CommentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="12" column="103" lean-forward="true" selection-start-line="12" selection-start-column="103" selection-end-line="12" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://b30fe16f-97fb-44ba-a711-51f2601a2094/schema/my_blog/table/sys_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/LinkService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/CommentVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/utils/SecurityUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
@@ -1174,16 +1118,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#994#995#0" expanded="true" />
             <element signature="e#1051#1052#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/BlogApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1320,9 +1254,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog-vue/src/api/article.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog-framework/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -1458,11 +1389,132 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/aspect/LogAspect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="885">
           <caret line="50" column="124" lean-forward="true" selection-start-line="50" selection-start-column="124" selection-end-line="50" selection-end-column="124" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/BlogApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/job/ViewCountRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/utils/RedisCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109">
+          <caret line="190" column="16" selection-start-line="190" selection-start-column="16" selection-end-line="190" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/job/TestJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Article.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="63" column="35" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-vue/src/api/article.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/job/updataViewCountJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="33" column="49" lean-forward="true" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/runner/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/runner/ViewCountRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/ArticleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="34" column="41" lean-forward="true" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+          <folding>
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#922#923#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/ArticleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/ArticleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="98" column="28" selection-start-line="98" selection-start-column="28" selection-end-line="98" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/LinkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="7" column="62" lean-forward="true" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
         </state>
       </provider>
     </entry>
