@@ -445,9 +445,9 @@
               </option>
               <option name="name" value="MyTag" />
               <option name="preName" value="my_" />
-              <option name="saveModelName" value="blog-framework" />
+              <option name="saveModelName" value="blog-admin" />
               <option name="savePackageName" value="" />
-              <option name="savePath" value="./blog-framework/src/main/java/com_bjut/blog" />
+              <option name="savePath" value="./blog-admin/src/main/java/com_bjut/blog" />
               <option name="templateGroupName" value="MybatisPlus" />
             </TableInfoDTO>
           </value>
