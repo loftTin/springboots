@@ -3,4 +3,4 @@
 
 有前台和简单的数据库,和一点点后台
 
-跟着https://github.com/shuhongfan/SGBlog做的
+跟着 https://github.com/shuhongfan/SGBlog/ 做的
