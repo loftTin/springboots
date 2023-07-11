@@ -2,8 +2,10 @@ package com_bjut.blog.controller;
 
 import com_bjut.blog.domain.ResponseResult;
 import com_bjut.blog.domain.entity.LoginUser;
+import com_bjut.blog.domain.entity.Menu;
 import com_bjut.blog.domain.entity.User;
 import com_bjut.blog.domain.vo.AdminUserInfoVo;
+import com_bjut.blog.domain.vo.RoutersVo;
 import com_bjut.blog.domain.vo.UserInfoVo;
 import com_bjut.blog.enums.AppHttpCodeEnum;
 import com_bjut.blog.exception.SystemException;
@@ -25,7 +27,9 @@ import java.util.List;
 public class LoginController {
     @Autowired
     private LoginService loginService;
+    @Autowired
     private MenuService menuService;
+    @Autowired
     private RoleService roleService;
 
     @PostMapping("/user/login")
@@ -44,8 +48,7 @@ public class LoginController {
         //根据用户ID查询权限信息
         List<String> perms = menuService.selectPermsByUserId(loginUser.getUser().getId());
         //根据用户ID查询角色信息
-        List <String> rolesKeyList = null;
-//                List <String> rolesKeyList = roleService.selectRoleKeyByUserId(loginUser.getUser().getId());
+        List <String> rolesKeyList = roleService.selectRoleKeyByUserId(loginUser.getUser().getId());
 
         //获取用户信息
         User user = loginUser.getUser();
@@ -53,6 +56,15 @@ public class LoginController {
         //封装数据返回
         AdminUserInfoVo adminUserInfoVo = new AdminUserInfoVo(perms,rolesKeyList,userInfoVo);
         return ResponseResult.okResult(adminUserInfoVo);
+    }
+
+    @GetMapping("getRouters")
+    public ResponseResult<RoutersVo> getRouters(){
+        Long userId = SecurityUtils.getUserId();
+        //查询menu 结果是tree的形式
+        List<Menu> menus = menuService.selectRouterMenuTreeByUserId(userId);
+        //封装数据返回
+        return ResponseResult.okResult(new RoutersVo(menus));
     }
 
 }

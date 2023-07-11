@@ -19,7 +19,10 @@ import java.util.List;
  * @since 2022-08-09 22:32:07
  */
 public interface MenuMapper extends BaseMapper<Menu> {
-
     List<String> selectPermsByUserId(Long userId);
+
+    List<Menu> selectAllRouterMenu();
+
+    List<Menu> selectRouterMenuTreeByUserId(Long userId);
 }
 
