@@ -48,6 +48,12 @@ public class TagController {
     public ResponseResult updateById(@RequestBody TagVo tagVo){
         return tagService.myUpdateById(tagVo);
     }
+
+    @GetMapping("/listAllTag")
+    public ResponseResult listAllTag(){
+        List<TagVo> list = tagService.listAllTag();
+        return ResponseResult.okResult(list);
+    }
 }
 
 

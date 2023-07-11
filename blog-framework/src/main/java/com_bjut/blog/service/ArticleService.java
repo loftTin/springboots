@@ -2,6 +2,7 @@ package com_bjut.blog.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com_bjut.blog.domain.ResponseResult;
+import com_bjut.blog.domain.dto.AddArticleDto;
 import com_bjut.blog.domain.entity.Article;
 import org.springframework.stereotype.Service;
 
@@ -20,5 +21,7 @@ public interface ArticleService extends IService<Article> {
     ResponseResult getArticleDetail(Long id);
 
     ResponseResult updateViewCount(Long id);
+
+    ResponseResult add(AddArticleDto article);
 }
 
