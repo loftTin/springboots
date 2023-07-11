@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4c81c08-a263-4cda-af05-07cf1908de15" name="变更" comment="a version with login/logout and admin">
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/dto/TagListDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/TagVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/TagController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/TagController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/constants/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/constants/SystemConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Tag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/TagMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/TagMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/LoginService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/TagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/TagService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/SystemLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/SystemLoginServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/TagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/TagServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/blog-blog/target/" />
@@ -71,12 +64,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/TagController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+            <state relative-caret-position="437">
+              <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#914#915#0" expanded="true" />
                 <element signature="e#965#966#0" expanded="true" />
+                <element signature="e#1248#1249#0" expanded="true" />
+                <element signature="e#1294#1295#0" expanded="true" />
+                <element signature="e#1339#1340#0" expanded="true" />
+                <element signature="e#1366#1367#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,8 +82,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/TagServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="85" column="41" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
+            <state relative-caret-position="377">
+              <caret line="135" column="34" lean-forward="true" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/TagVo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/TagService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+            <state relative-caret-position="475">
+              <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/UserController.java" />
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/annotation/SystemLog.java" />
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/aspect/LogAspect.java" />
         <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/runner/TestRunner.java" />
@@ -183,6 +191,7 @@
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/TagMapper.java" />
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Tag.java" />
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/constants/SystemConstants.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/TagVo.java" />
         <option value="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/TagController.java" />
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/TagService.java" />
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/TagServiceImpl.java" />
@@ -232,8 +241,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="912" />
-    <option name="width" value="938" />
-    <option name="height" value="1088" />
+    <option name="y" value="-9" />
+    <option name="width" value="939" />
+    <option name="height" value="1098" />
   </component>
   <component name="ProjectId" id="2RjNpoMCpdVbflv7rOTD8FJKNAq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -626,7 +636,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1689073273857" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1689078150355" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -903,7 +913,7 @@
       <workItem from="1688346534698" duration="65127000" />
       <workItem from="1688631061836" duration="6717000" />
       <workItem from="1688708447634" duration="789000" />
-      <workItem from="1689044338231" duration="21281000" />
+      <workItem from="1689044338231" duration="24121000" />
     </task>
     <task id="LOCAL-00001" summary="a version without login/logout/admin">
       <created>1688348728885</created>
@@ -989,7 +999,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689064241099</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="a version with login/logout and admin">
+      <created>1689073288844</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1689073288844</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1013,7 +1030,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146693000" />
+    <option name="totallyTimeSpent" value="149533000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1025,12 +1042,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="730" y="0" width="750" height="870" extended-state="0" />
+    <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Repositories" order="0" weight="0.19300699" />
       <window_info id="设计器" order="1" />
-      <window_info content_ui="combo" id="Project" order="2" weight="0.48554912" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.24615385" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="4" />
       <window_info id="Image Layers" order="5" />
@@ -1038,7 +1055,7 @@
       <window_info id="UI Designer" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info id="Web" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Run Dashboard" order="0" visible="true" weight="0.199187" />
+      <window_info anchor="bottom" id="Run Dashboard" order="0" visible="true" weight="0.19705094" />
       <window_info anchor="bottom" id="调试" order="1" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.44772118" />
@@ -1167,13 +1184,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/resources/mapper/RoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/BlogAdminApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1548,22 +1558,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/TagVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/TagController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+        <state relative-caret-position="437">
+          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#914#915#0" expanded="true" />
             <element signature="e#965#966#0" expanded="true" />
+            <element signature="e#1248#1249#0" expanded="true" />
+            <element signature="e#1294#1295#0" expanded="true" />
+            <element signature="e#1339#1340#0" expanded="true" />
+            <element signature="e#1366#1367#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/TagService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+        <state relative-caret-position="475">
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1572,8 +1596,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/TagServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="85" column="41" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
+        <state relative-caret-position="377">
+          <caret line="135" column="34" lean-forward="true" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

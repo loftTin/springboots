@@ -3,10 +3,9 @@ package com_bjut.blog.controller;
 
 import com_bjut.blog.domain.ResponseResult;
 import com_bjut.blog.domain.dto.TagListDto;
-import com_bjut.blog.domain.entity.Tag;
 import com_bjut.blog.domain.vo.PageVo;
+import com_bjut.blog.domain.vo.TagVo;
 import com_bjut.blog.service.TagService;
-import com_bjut.blog.utils.BeanCopyUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -38,6 +37,16 @@ public class TagController {
     public ResponseResult<Object> deleteTag(@PathVariable("id") List<Long> id) {
         System.out.println("删除："+id);
         return tagService.deleteTag(id);
+    }
+
+    @GetMapping("/{id}")
+    public ResponseResult getLableById(@PathVariable Long id){
+        return tagService.getLableById(id);
+    }
+
+    @PutMapping
+    public ResponseResult updateById(@RequestBody TagVo tagVo){
+        return tagService.myUpdateById(tagVo);
     }
 }
 

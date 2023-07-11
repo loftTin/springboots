@@ -5,6 +5,7 @@ import com_bjut.blog.domain.ResponseResult;
 import com_bjut.blog.domain.dto.TagListDto;
 import com_bjut.blog.domain.entity.Tag;
 import com_bjut.blog.domain.vo.PageVo;
+import com_bjut.blog.domain.vo.TagVo;
 
 import java.util.List;
 
@@ -22,6 +23,10 @@ public interface TagService extends IService<Tag> {
     ResponseResult addTag(TagListDto tagListDto);
 
     ResponseResult deleteTag(List<Long> id);
+
+    ResponseResult getLableById(Long id);
+
+    ResponseResult myUpdateById(TagVo tagVo);
 }
 
 

@@ -8,8 +8,10 @@ import com_bjut.blog.domain.dto.TagListDto;
 import com_bjut.blog.domain.entity.LoginUser;
 import com_bjut.blog.domain.entity.Tag;
 import com_bjut.blog.domain.vo.PageVo;
+import com_bjut.blog.domain.vo.TagVo;
 import com_bjut.blog.mapper.TagMapper;
 import com_bjut.blog.service.TagService;
+import com_bjut.blog.utils.BeanCopyUtils;
 import com_bjut.blog.utils.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -93,6 +95,48 @@ public class TagServiceImpl extends ServiceImpl<TagMapper, Tag> implements TagSe
         }
         return ResponseResult.okResult();
     }
+
+    @Override
+    public ResponseResult getLableById(Long id){
+        //通过id查询找到tag类型数据包
+        Tag tag = tagMapper.selectById(id);
+        //封装成vo响应给前端
+        TagVo tagVoData = BeanCopyUtils.copyBean(tag, TagVo.class);
+        return ResponseResult.okResult(tagVoData);
+    }
+
+    @Override
+    public ResponseResult myUpdateById(TagVo tagVo) {
+        // 把修改数据转为tag类型
+        Tag tag = new Tag();
+        // 获得[更新时间，更新人]
+        LoginUser loginUser = SecurityUtils.getLoginUser();
+        // 更新人的id号，在sql中可以通过id号查询my_user中的user_name
+        tag.setUpdateBy(loginUser.getUser().getId());
+        //创建、更新时间
+        try {
+            // 创建fSimpLeDateFormat对象，指定日期格式
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            // 获取当前时间
+            Date now = new Date();
+            // 将当前时间格式化为指定格式的字符串
+            String strNow = sdf.format(now);
+            // 将宁符串转施为Date 类型
+            Date date = sdf.parse(strNow);
+            // 时间修改
+            tag.setCreateTime(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        // 标签，描述修改
+        tag.setId(tagVo .getId());
+        tag.setName(tagVo .getName());
+        tag.setRemark(tagVo .getRemark());
+        // 更新到数据库
+        tagMapper.updateById(tag);
+        return ResponseResult.okResult();
+    }
+
 
 }
 
