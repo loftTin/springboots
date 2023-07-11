@@ -373,7 +373,7 @@ a {
     object-fit: cover;
 }
 .maxW{
-    max-width: 100%;
+    max-width: 80%;
 }
 .fwb{
     font-weight:bold;
