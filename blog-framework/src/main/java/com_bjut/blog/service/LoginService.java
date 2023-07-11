@@ -6,4 +6,5 @@ import com_bjut.blog.domain.entity.User;
 public interface LoginService {
     ResponseResult login(User user);
 
+    ResponseResult logout();
 }

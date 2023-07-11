@@ -711,7 +711,7 @@
               <option name="preName" value="sys_" />
               <option name="saveModelName" value="blog-framework" />
               <option name="savePackageName" value="" />
-              <option name="savePath" value="./blog-framework/src/main/java" />
+              <option name="savePath" value="./blog-framework/src/main/java/com_bjut/blog" />
               <option name="templateGroupName" value="MybatisPlus" />
             </TableInfoDTO>
           </value>

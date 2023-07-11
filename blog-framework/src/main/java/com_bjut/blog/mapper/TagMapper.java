@@ -2,6 +2,7 @@ package com_bjut.blog.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com_bjut.blog.domain.entity.Tag;
+import org.springframework.stereotype.Repository;
 
 
 /**
@@ -10,6 +11,7 @@ import com_bjut.blog.domain.entity.Tag;
  * @author makejava
  * @since 2023-07-07 14:44:31
  */
+@Repository
 public interface TagMapper extends BaseMapper<Tag> {
 
 }

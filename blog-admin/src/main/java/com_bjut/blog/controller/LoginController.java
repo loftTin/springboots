@@ -2,12 +2,15 @@ package com_bjut.blog.controller;
 
 import com_bjut.blog.domain.ResponseResult;
 import com_bjut.blog.domain.entity.LoginUser;
+import com_bjut.blog.domain.entity.Menu;
 import com_bjut.blog.domain.entity.User;
 import com_bjut.blog.domain.vo.AdminUserInfoVo;
+import com_bjut.blog.domain.vo.RoutersVo;
 import com_bjut.blog.domain.vo.UserInfoVo;
 import com_bjut.blog.enums.AppHttpCodeEnum;
 import com_bjut.blog.exception.SystemException;
 import com_bjut.blog.service.LoginService;
+import com_bjut.blog.service.MenuService;
 import com_bjut.blog.service.RoleService;
 import com_bjut.blog.utils.BeanCopyUtils;
 import com_bjut.blog.utils.SecurityUtils;
@@ -24,7 +27,9 @@ import java.util.List;
 public class LoginController {
     @Autowired
     private LoginService loginService;
+    @Autowired
     private MenuService menuService;
+    @Autowired
     private RoleService roleService;
 
     @PostMapping("/user/login")
@@ -40,19 +45,31 @@ public class LoginController {
     public ResponseResult<AdminUserInfoVo> getInfo(){
         //获取当前登录的用户
         LoginUser loginUser = SecurityUtils.getLoginUser();
-        //根据用户id查询权限信息
+        //根据用户ID查询权限信息
         List<String> perms = menuService.selectPermsByUserId(loginUser.getUser().getId());
-        //根据用户id查询角色信息
-        List<String> roleKeyList = null;
-//        List<String> roleKeyList = roleService.selectRoleKeyByUserId(loginUser.getUser().getId());
+        //根据用户ID查询角色信息
+        List <String> rolesKeyList = roleService.selectRoleKeyByUserId(loginUser.getUser().getId());
 
         //获取用户信息
         User user = loginUser.getUser();
         UserInfoVo userInfoVo = BeanCopyUtils.copyBean(user, UserInfoVo.class);
         //封装数据返回
-
-        AdminUserInfoVo adminUserInfoVo = new AdminUserInfoVo(perms,roleKeyList,userInfoVo);
+        AdminUserInfoVo adminUserInfoVo = new AdminUserInfoVo(perms,rolesKeyList,userInfoVo);
         return ResponseResult.okResult(adminUserInfoVo);
+    }
+
+    @GetMapping("getRouters")
+    public ResponseResult<RoutersVo> getRouters(){
+        Long userId = SecurityUtils.getUserId();
+        //查询menu 结果是tree的形式
+        List<Menu> menus = menuService.selectRouterMenuTreeByUserId(userId);
+        //封装数据返回
+        return ResponseResult.okResult(new RoutersVo(menus));
+    }
+
+    @PostMapping("/user/logout")
+    public ResponseResult logout(){
+        return loginService.logout();
     }
 
 }
