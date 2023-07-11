@@ -13,7 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 public class AdminUserInfoVo {
 
-    private List<String> menus;
+    private List<String> permissions;
 
     private List<String> roles;
 

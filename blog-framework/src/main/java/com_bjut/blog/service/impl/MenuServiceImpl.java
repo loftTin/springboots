@@ -15,20 +15,18 @@ import java.util.stream.Collectors;
  * 菜单权限表(Menu)表服务实现类
  *
  * @author makejava
- * @since 2023-07-10 15:49:46
+ * @since 2023-07-11 10:49:19
  */
 @Service("menuService")
 public class MenuServiceImpl extends ServiceImpl<MenuMapper, Menu> implements MenuService {
 
-
     @Override
-    public List<String> selectRoleKeyByUserId(Long id) {
-
-        //如果为管理员，返回所有的权限
+    public List<String> selectPermsByUserId(Long id) {
+        //如果是管理员，返回所有的权限
         if(id == 1L){
             LambdaQueryWrapper<Menu> wrapper = new LambdaQueryWrapper<>();
-            wrapper.in(Menu::getMenuType, SystemConstants.MENU,SystemConstants.BUTTON);
-            wrapper.eq(Menu::getStatus,SystemConstants.STATUS_NORMAL);
+            wrapper.in(Menu::getMenuType,SystemConstants.MENU,SystemConstants.BUTTON);
+            wrapper.eq(Menu::getStatus, SystemConstants.STATUS_NORMAL);
             List<Menu> menus = list(wrapper);
             List<String> perms = menus.stream()
                     .map(Menu::getPerms)
@@ -36,9 +34,7 @@ public class MenuServiceImpl extends ServiceImpl<MenuMapper, Menu> implements Me
             return perms;
         }
         //否则返回所具有的权限
-
-
-        return getBaseMapper().selectRoleKeyByUserId(id);
+        return getBaseMapper().selectPermsByUserId(id);
     }
 }
 

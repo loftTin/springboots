@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4c81c08-a263-4cda-af05-07cf1908de15" name="变更" comment="a version with login/logout and without admin">
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/TagController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/filter/JwtAuthenticationTokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/SystemLoginServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-blog/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-blog/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/AdminUserInfoVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/AdminUserInfoVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/MenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/MenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/MenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/resources/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/resources/MenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/项目实战-前后端分离博客系统.md" beforeDir="false" afterPath="$PROJECT_DIR$/项目实战-前后端分离博客系统.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/blog-blog/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -68,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+            <state relative-caret-position="131">
+              <caret line="49" column="16" lean-forward="true" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,28 +79,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blog-admin/pom.xml">
+        <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/BlogAdminApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/filter/JwtAuthenticationTokenFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/SystemLoginServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+            <state relative-caret-position="209">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,13 +91,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/LoginService.java">
+        <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/MenuService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="304">
+              <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/MenuServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -128,6 +120,7 @@
         <option value="FxmlFile" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Mybatis Mapper" />
       </list>
     </option>
   </component>
@@ -147,12 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/constants/SystemConstants.java" />
-        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/CommentService.java" />
-        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/CommentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/blog-blog/src/test/java/com_bjut/OSSTest.java" />
-        <option value="$PROJECT_DIR$/blog-blog/src/test/java/com_bjut/blog/OSSTest.java" />
-        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/UploadService.java" />
         <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/UploadController.java" />
         <option value="$PROJECT_DIR$/blog-framework/src/test/java/com_bjut/blog/service/impl/OssUploadServiceTest.java" />
         <option value="$PROJECT_DIR$/blog-blog/pom.xml" />
@@ -183,7 +170,6 @@
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/dto/AddCommentDto.java" />
         <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/CommentController.java" />
         <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/config/SwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/blog-blog/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/blog-admin/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/BlogAdminApplication.java" />
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Tag.java" />
@@ -194,10 +180,17 @@
         <option value="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/JwtAuthenticationTokenFilter.java" />
         <option value="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/filter/JwtAuthenticationTokenFilter.java" />
         <option value="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/config/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/service/LoginService.java" />
         <option value="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/service/impl/SystemLoginServiceImpl.java" />
         <option value="$PROJECT_DIR$/blog-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/blog-blog/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/Menu.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/MenuService.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/MenuServiceImpl.java" />
+        <option value="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/AdminUserInfoVo.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/MenuMapper.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/resources/MenuMapper.xml" />
       </list>
     </option>
   </component>
@@ -222,25 +215,21 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="blog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="blog-admin" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="blog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="blog-admin" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="blog-blog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="blog-blog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="blog-framework" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="blog-framework" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
@@ -261,7 +250,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -321,39 +309,6 @@
               <item name="blog-admin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -380,54 +335,13 @@
               <item name="blog-framework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -442,12 +356,12 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1688730293702" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1689047960970" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog-framework/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -460,11 +374,6 @@
       <recent name="com_bjut.blog.service.impl" />
       <recent name="com.blog.service.impl" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\desktop\小学期2\blog\blog-blog\src\main\java" />
-      <recent name="E:\desktop\小学期2\blog\blog-blog\src" />
-      <recent name="E:\desktop\小学期2\blog\blog-blog" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -474,6 +383,11 @@
       <recent name="com_bjut.blog" />
       <recent name="com.blog.service" />
       <recent name="com.blog.service.impl" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\desktop\小学期2\blog\blog-blog\src\main\java" />
+      <recent name="E:\desktop\小学期2\blog\blog-blog\src" />
+      <recent name="E:\desktop\小学期2\blog\blog-blog" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\desktop\小学期2\blog\blog-admin\src\main\java\com_bjut\blog" />
@@ -493,6 +407,11 @@
     </key>
   </component>
   <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
     <option name="ruleStates">
       <list>
         <RuleState>
@@ -711,6 +630,7 @@
       <workItem from="1688346534698" duration="65127000" />
       <workItem from="1688631061836" duration="6717000" />
       <workItem from="1688708447634" duration="789000" />
+      <workItem from="1689044338231" duration="3671000" />
     </task>
     <task id="LOCAL-00001" summary="a version without login/logout/admin">
       <created>1688348728885</created>
@@ -799,7 +719,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125105000" />
+    <option name="totallyTimeSpent" value="129083000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -815,7 +735,7 @@
     <layout>
       <window_info id="Repositories" order="0" weight="0.19300699" />
       <window_info id="设计器" order="1" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.23846154" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.26783216" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="4" />
       <window_info id="Image Layers" order="5" />
@@ -823,14 +743,15 @@
       <window_info id="UI Designer" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info id="Web" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Run Dashboard" weight="0.3297587" />
       <window_info anchor="bottom" id="调试" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.09517426" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.44772118" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.85524476" weight="0.2707775" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.8545455" weight="0.33109918" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49720278" weight="0.3297587" />
+      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49720278" weight="0.072289154" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3297587" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.633378" weight="0.04021448" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
@@ -839,8 +760,51 @@
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4986014" weight="0.4235925" />
       <window_info anchor="bottom" id="Database Console" order="15" sideWeight="0.4986014" weight="0.3297587" />
-      <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.4902098" weight="0.26675603" />
+      <window_info active="true" anchor="bottom" id="Messages" order="16" sideWeight="0.4902098" visible="true" weight="0.40214476" />
       <window_info anchor="bottom" id="GitHub Pull Requests" order="17" sideWeight="0.4993007" weight="0.3297587" />
+      <window_info anchor="right" id="调色板" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.24965034" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.23286714" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Database" order="7" weight="0.17202798" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" />
+      <window_info anchor="right" id="Github Tools" order="11" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Repositories" order="0" weight="0.19300699" />
+      <window_info id="设计器" order="1" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.26783216" />
+      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="4" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="UI Designer" order="7" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info id="Web" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Run Dashboard" order="0" weight="0.3297587" />
+      <window_info anchor="bottom" id="调试" order="1" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.44772118" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.85524476" weight="0.2707775" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.8545455" weight="0.33109918" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" sideWeight="0.49720278" weight="0.072289154" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.3297587" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.633378" weight="0.04021448" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.14475524" side_tool="true" weight="0.31233245" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3297587" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.4986014" weight="0.4235925" />
+      <window_info anchor="bottom" id="Database Console" order="16" sideWeight="0.4986014" weight="0.3297587" />
+      <window_info anchor="bottom" id="Messages" order="17" sideWeight="0.4902098" weight="0.26675603" />
+      <window_info anchor="bottom" id="GitHub Pull Requests" order="18" sideWeight="0.4993007" weight="0.3297587" />
       <window_info anchor="right" id="调色板" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.24965034" />
@@ -853,7 +817,7 @@
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" />
       <window_info anchor="right" id="Github Tools" order="11" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -950,101 +914,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-622">
-          <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar!/org/aspectj/lang/annotation/Around.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="12" selection-start-line="12" selection-end-line="13" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.7/spring-web-5.3.7.jar!/org/springframework/web/context/request/RequestAttributes.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/annotation/SystemLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/aspect/LogAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="50" column="124" lean-forward="true" selection-start-line="50" selection-start-column="124" selection-end-line="50" selection-end-column="124" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/job/ViewCountRunner.java" />
-    <entry file="file://$PROJECT_DIR$/blog-vue/src/api/article.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/ArticleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
-          <folding>
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#920#921#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/ArticleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/ArticleServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1444">
@@ -1206,13 +1075,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/BlogApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1244,9 +1106,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/config/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/config/SwaggerConfig.java" />
     <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Tag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -1254,39 +1114,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/TagController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-            <element signature="e#813#814#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/config/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-admin/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/BlogAdminApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1361,20 +1192,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/blog-admin/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        <state relative-caret-position="323">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog-admin/pom.xml">
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/Menu.java" />
+    <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/TagController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="133">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-admin/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/LinkMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ed7e3732-616f-4362-bcdc-a62e296f25e9/schema/my_blog/table/sys_menu">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/RoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/AdminUserInfoVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/resources/MenuMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/MenuMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/MenuServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/MenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="49" column="16" lean-forward="true" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/BlogAdminApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1430,7 +1375,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>blogadmin</last-edited>
+          <last-edited>blog-framework</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

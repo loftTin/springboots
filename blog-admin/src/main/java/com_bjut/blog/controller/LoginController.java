@@ -42,9 +42,10 @@ public class LoginController {
         //获取当前登录的用户
         LoginUser loginUser = SecurityUtils.getLoginUser();
         //根据用户ID查询权限信息
-        List<String> perms = menuService.selectRoleKeyByUserId(loginUser.getUser().getId());
+        List<String> perms = menuService.selectPermsByUserId(loginUser.getUser().getId());
         //根据用户ID查询角色信息
-        List <String> rolesKeyList = roleService.selectRoleKeyByUserId(loginUser.getUser().getId());
+        List <String> rolesKeyList = null;
+//                List <String> rolesKeyList = roleService.selectRoleKeyByUserId(loginUser.getUser().getId());
 
         //获取用户信息
         User user = loginUser.getUser();
