@@ -28,7 +28,9 @@
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="11bd3f5a-36d2-45dd-9b50-687348138bcf" dataset="blog_blog.blog_article" active-filter-id="EMPTY_FILTER" />
-    <filter-actions connection-id="ad530b15-063e-409a-b604-91da01986921" dataset="my_blog.my_article" active-filter-id="" />
+    <filter-actions connection-id="ad530b15-063e-409a-b604-91da01986921" dataset="my_blog.my_article" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="ad530b15-063e-409a-b604-91da01986921" dataset="my_blog.sys_menu" active-filter-id="" />
+    <filter-actions connection-id="ad530b15-063e-409a-b604-91da01986921" dataset="my_blog.my_tag" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
     <mapping file-url="file://$PROJECT_DIR$/blog-framework" connection-id="11bd3f5a-36d2-45dd-9b50-687348138bcf" session-id="MAIN" current-schema="blog" />

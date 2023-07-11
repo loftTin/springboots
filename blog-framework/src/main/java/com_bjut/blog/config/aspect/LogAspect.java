@@ -1,4 +1,4 @@
-package com_bjut.blog.aspect;
+package com_bjut.blog.config.aspect;
 
 import com.alibaba.fastjson.JSON;
 import com_bjut.blog.annotation.SystemLog;

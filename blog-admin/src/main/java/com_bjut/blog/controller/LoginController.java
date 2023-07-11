@@ -8,7 +8,6 @@ import com_bjut.blog.domain.vo.UserInfoVo;
 import com_bjut.blog.enums.AppHttpCodeEnum;
 import com_bjut.blog.exception.SystemException;
 import com_bjut.blog.service.LoginService;
-import com_bjut.blog.service.MenuService;
 import com_bjut.blog.service.RoleService;
 import com_bjut.blog.utils.BeanCopyUtils;
 import com_bjut.blog.utils.SecurityUtils;
@@ -41,16 +40,18 @@ public class LoginController {
     public ResponseResult<AdminUserInfoVo> getInfo(){
         //获取当前登录的用户
         LoginUser loginUser = SecurityUtils.getLoginUser();
-        //根据用户ID查询权限信息
-        List<String> perms = menuService.selectRoleKeyByUserId(loginUser.getUser().getId());
-        //根据用户ID查询角色信息
-        List <String> rolesKeyList = roleService.selectRoleKeyByUserId(loginUser.getUser().getId());
+        //根据用户id查询权限信息
+        List<String> perms = menuService.selectPermsByUserId(loginUser.getUser().getId());
+        //根据用户id查询角色信息
+        List<String> roleKeyList = null;
+//        List<String> roleKeyList = roleService.selectRoleKeyByUserId(loginUser.getUser().getId());
 
         //获取用户信息
         User user = loginUser.getUser();
         UserInfoVo userInfoVo = BeanCopyUtils.copyBean(user, UserInfoVo.class);
         //封装数据返回
-        AdminUserInfoVo adminUserInfoVo = new AdminUserInfoVo(perms,rolesKeyList,userInfoVo);
+
+        AdminUserInfoVo adminUserInfoVo = new AdminUserInfoVo(perms,roleKeyList,userInfoVo);
         return ResponseResult.okResult(adminUserInfoVo);
     }
 
