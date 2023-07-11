@@ -6,15 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f4c81c08-a263-4cda-af05-07cf1908de15" name="变更" comment="a version with login/logout and without admin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-vue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-vue/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-vue/src/components/header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue/src/components/header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-vue/src/components/rightlist.vue" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue/src/components/rightlist.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-vue/static/img/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue/static/img/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-vue/static/img/headbg05.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue/static/img/headbg05.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-vue/static/img/img01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue/static/img/img01.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-vue/static/img/tou.png" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue/static/img/tou.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-vue/static/img/web.ico" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue/static/img/web.ico" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/blog-blog/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -213,13 +204,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="springboots" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboots" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboots" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboots" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboots" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboots" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboots" type="b2602c69:ProjectViewProjectNode" />
@@ -265,6 +266,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -532,6 +534,7 @@
       <workItem from="1688346534698" duration="65127000" />
       <workItem from="1688631061836" duration="6717000" />
       <workItem from="1688953103230" duration="4300000" />
+      <workItem from="1689036366951" duration="256000" />
     </task>
     <task id="LOCAL-00001" summary="a version without login/logout/admin">
       <created>1688348728885</created>
@@ -589,7 +592,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688697073450</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="a version with login/logout and without admin">
+      <created>1689036444846</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1689036444846</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -613,7 +623,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123307000" />
+    <option name="totallyTimeSpent" value="123563000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -629,7 +639,7 @@
     <layout>
       <window_info id="Repositories" order="0" weight="0.19300699" />
       <window_info id="设计器" order="1" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.27949062" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.28370222" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="4" />
       <window_info id="Image Layers" order="5" />
@@ -646,16 +656,15 @@
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49720278" weight="0.3297587" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3297587" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.59517425" visible="true" weight="0.34985834" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.5942321" visible="true" weight="0.34844193" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.40482575" side_tool="true" visible="true" weight="0.34985834" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.40576795" side_tool="true" visible="true" weight="0.34844193" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4976526" weight="0.18838526" />
       <window_info anchor="bottom" id="Database Console" order="15" sideWeight="0.4986014" weight="0.3297587" />
       <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.4902098" weight="0.26675603" />
       <window_info anchor="bottom" id="GitHub Pull Requests" order="17" sideWeight="0.4993007" weight="0.3297587" />
-      <window_info anchor="right" id="Github Tools" />
       <window_info anchor="right" id="调色板" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.24965034" />
@@ -663,10 +672,11 @@
       <window_info anchor="right" id="Maven" order="4" weight="0.0986014" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.27144772" />
+      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.27095908" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" />
+      <window_info anchor="right" id="Github Tools" order="11" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
