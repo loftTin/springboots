@@ -3,6 +3,9 @@ package com_bjut.blog.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com_bjut.blog.domain.ResponseResult;
 import com_bjut.blog.domain.entity.Category;
+import com_bjut.blog.domain.vo.CategoryVo;
+
+import java.util.List;
 
 
 /**
@@ -15,5 +18,6 @@ public interface CategoryService extends IService<Category> {
 
     ResponseResult getCategoryList();
 
+    List<CategoryVo> listAllCategory();
 }
 
