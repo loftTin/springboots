@@ -2,6 +2,7 @@ package com_bjut.blog.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com_bjut.blog.domain.entity.Menu;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -18,6 +19,7 @@ import java.util.List;
  * @author makejava
  * @since 2022-08-09 22:32:07
  */
+@Repository(value = "menuMapper")
 public interface MenuMapper extends BaseMapper<Menu> {
     List<String> selectPermsByUserId(Long userId);
 
