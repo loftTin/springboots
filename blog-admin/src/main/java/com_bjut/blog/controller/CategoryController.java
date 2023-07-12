@@ -7,14 +7,14 @@ import com_bjut.blog.domain.ResponseResult;
 import com_bjut.blog.domain.entity.Category;
 import com_bjut.blog.domain.vo.CategoryVo;
 import com_bjut.blog.domain.vo.ExcelCategoryVo;
+import com_bjut.blog.domain.vo.PageVo;
 import com_bjut.blog.enums.AppHttpCodeEnum;
 import com_bjut.blog.service.CategoryService;
 import com_bjut.blog.utils.BeanCopyUtils;
 import com_bjut.blog.utils.WebUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
@@ -31,6 +31,39 @@ public class CategoryController {
         return ResponseResult.okResult(list);
     }
 
+    @PutMapping
+    public ResponseResult edit(@RequestBody Category category){
+        categoryService.updateById(category);
+        return ResponseResult.okResult();
+    }
+
+    @DeleteMapping(value = "/{id}")
+    public ResponseResult remove(@PathVariable(value = "id")Long id){
+        categoryService.removeById(id);
+        return ResponseResult.okResult();
+    }
+
+    @GetMapping(value = "/{id}")
+    public ResponseResult getInfo(@PathVariable(value = "id")Long id){
+        Category category = categoryService.getById(id);
+        return ResponseResult.okResult(category);
+    }
+    @PostMapping
+    public ResponseResult add(@RequestBody Category category){
+        categoryService.save(category);
+        return ResponseResult.okResult();
+    }
+    /**
+     * 获取用户列表
+     */
+    @GetMapping("/list")
+    public ResponseResult list(Category category, Integer pageNum, Integer pageSize) {
+        PageVo pageVo = categoryService.selectCategoryPage(category,pageNum,pageSize);
+        return ResponseResult.okResult(pageVo);
+    }
+
+
+    @PreAuthorize("@ps.hasPermission('content:category:export')")
     @GetMapping("/export")
     public void export(HttpServletResponse response){
         try {

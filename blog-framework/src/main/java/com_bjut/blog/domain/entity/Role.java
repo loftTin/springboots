@@ -1,5 +1,6 @@
 package com_bjut.blog.domain.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -42,7 +43,9 @@ public class Role  {
     //备注
     private String remark;
 
-
+    //关联菜单id数组，不是表中的字段  用来接收参数使用
+    @TableField(exist = false)
+    private Long[] menuIds;
 
 }
 

@@ -2,10 +2,14 @@ package com_bjut.blog.controller;
 
 
 import com_bjut.blog.domain.ResponseResult;
+import com_bjut.blog.domain.dto.AddTagDto;
+import com_bjut.blog.domain.dto.EditTagDto;
 import com_bjut.blog.domain.dto.TagListDto;
+import com_bjut.blog.domain.entity.Tag;
 import com_bjut.blog.domain.vo.PageVo;
 import com_bjut.blog.domain.vo.TagVo;
 import com_bjut.blog.service.TagService;
+import com_bjut.blog.utils.BeanCopyUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,25 +33,32 @@ public class TagController {
     }
 
     @PostMapping
-    private ResponseResult addTag(@RequestBody TagListDto tagListDto){
-        return tagService.addTag(tagListDto);
+    public ResponseResult add(@RequestBody AddTagDto tagDto){
+        Tag tag = BeanCopyUtils.copyBean(tagDto, Tag.class);
+        tagService.save(tag);
+        return ResponseResult.okResult();
     }
 
     @DeleteMapping("/{id}")
-    public ResponseResult<Object> deleteTag(@PathVariable("id") List<Long> id) {
-        System.out.println("删除："+id);
-        return tagService.deleteTag(id);
-    }
-
-    @GetMapping("/{id}")
-    public ResponseResult getLableById(@PathVariable Long id){
-        return tagService.getLableById(id);
+    public ResponseResult delete(@PathVariable Long id){
+        tagService.removeById(id);
+        return ResponseResult.okResult();
     }
 
     @PutMapping
-    public ResponseResult updateById(@RequestBody TagVo tagVo){
-        return tagService.myUpdateById(tagVo);
+    public ResponseResult edit(@RequestBody EditTagDto tagDto){
+        Tag tag = BeanCopyUtils.copyBean(tagDto,Tag.class);
+        tagService.updateById(tag);
+        return ResponseResult.okResult();
     }
+
+
+    @GetMapping(value = "/{id}")
+    public ResponseResult getInfo(@PathVariable(value = "id")Long id){
+        Tag tag = tagService.getById(id);
+        return ResponseResult.okResult(tag);
+    }
+
 
     @GetMapping("/listAllTag")
     public ResponseResult listAllTag(){

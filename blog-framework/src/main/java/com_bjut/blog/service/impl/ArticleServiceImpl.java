@@ -6,13 +6,11 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com_bjut.blog.constants.SystemConstants;
 import com_bjut.blog.domain.ResponseResult;
 import com_bjut.blog.domain.dto.AddArticleDto;
+import com_bjut.blog.domain.dto.ArticleDto;
 import com_bjut.blog.domain.entity.Article;
 import com_bjut.blog.domain.entity.ArticleTag;
 import com_bjut.blog.domain.entity.Category;
-import com_bjut.blog.domain.vo.ArticleDetailVo;
-import com_bjut.blog.domain.vo.ArticleListVo;
-import com_bjut.blog.domain.vo.HotArticleVo;
-import com_bjut.blog.domain.vo.PageVo;
+import com_bjut.blog.domain.vo.*;
 import com_bjut.blog.mapper.ArticleMapper;
 import com_bjut.blog.service.ArticleService;
 import com_bjut.blog.service.ArticleTagService;
@@ -23,6 +21,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.StringUtils;
 
 import java.util.List;
 import java.util.Objects;
@@ -143,4 +142,57 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
         return ResponseResult.okResult();
     }
 
+    @Override
+    public PageVo selectArticlePage(Article article, Integer pageNum, Integer pageSize) {
+        LambdaQueryWrapper<Article> queryWrapper = new LambdaQueryWrapper();
+
+        queryWrapper.like(StringUtils.hasText(article.getTitle()),Article::getTitle, article.getTitle());
+        queryWrapper.like(StringUtils.hasText(article.getSummary()),Article::getSummary, article.getSummary());
+
+        Page<Article> page = new Page<>();
+        page.setCurrent(pageNum);
+        page.setSize(pageSize);
+        page(page,queryWrapper);
+
+        //转换成VO
+        List<Article> articles = page.getRecords();
+
+        //这里偷懒没写VO的转换 应该转换完在设置到最后的pageVo中
+
+        PageVo pageVo = new PageVo();
+        pageVo.setTotal(page.getTotal());
+        pageVo.setRows(articles);
+        return pageVo;
+    }
+
+    @Override
+    public ArticleVo getInfo(Long id) {
+        Article article = getById(id);
+        //获取关联标签
+        LambdaQueryWrapper<ArticleTag> articleTagLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        articleTagLambdaQueryWrapper.eq(ArticleTag::getArticleId,article.getId());
+        List<ArticleTag> articleTags = articleTagService.list(articleTagLambdaQueryWrapper);
+        List<Long> tags = articleTags.stream().map(articleTag -> articleTag.getTagId()).collect(Collectors.toList());
+
+        ArticleVo articleVo = BeanCopyUtils.copyBean(article, ArticleVo.class);
+        articleVo.setTags(tags);
+        return articleVo;
+    }
+
+    @Override
+    public void edit(ArticleDto articleDto) {
+        Article article = BeanCopyUtils.copyBean(articleDto, Article.class);
+        //更新博客信息
+        updateById(article);
+        //删除原有的 标签和博客的关联
+        LambdaQueryWrapper<ArticleTag> articleTagLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        articleTagLambdaQueryWrapper.eq(ArticleTag::getArticleId,article.getId());
+        articleTagService.remove(articleTagLambdaQueryWrapper);
+        //添加新的博客和标签的关联信息
+        List<ArticleTag> articleTags = articleDto.getTags().stream()
+                .map(tagId -> new ArticleTag(articleDto.getId(), tagId))
+                .collect(Collectors.toList());
+        articleTagService.saveBatch(articleTags);
+
+    }
 }
