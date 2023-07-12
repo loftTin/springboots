@@ -46,7 +46,7 @@
 
 			<h2 class="h-description">
 
-                        {{this.$store.state.themeObj.autograph?this.$store.state.themeObj.autograph:"珍不珍惜动植物都要保护"}}
+                        {{this.$store.state.themeObj.autograph?this.$store.state.themeObj.autograph:"珍不珍稀动植物都要保护"}}
 
                 </h2>
 		</div>
