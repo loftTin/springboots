@@ -2838,11 +2838,11 @@ to {
     background: #fff;
     padding:15px;
     border-radius: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 .tFriendsBox h1{
     padding:15px 0;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
 .tFriendsBox .tf-item{
