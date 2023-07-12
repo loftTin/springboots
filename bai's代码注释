@@ -1,0 +1,854 @@
+### 3.13 个人信息查询接口
+#### 3.13.1 需求
+​ 进入个人中心的时候需要能够查看当前用户信息
+
+#### 3.13.2 接口设计
+请求方式：GET	  
+请求地址：/user/userInf	  
+请求头：需要token请求头  
+不需要参数
+
+响应格式:
+```
+{
+	"code":200,
+	"data":{
+		"avatar":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F3bf9c263bc0f2ac5c3a7feb9e218d07475573ec8.gi",
+		"email":"23412332@qq.com",
+		"id":"1",
+		"nickName":"sg333",
+		"sex":"1"
+	},
+	"msg":"操作成功"
+}
+```
+#### 3.13.3 代码实现
+UserController
+```
+@RestController
+@RequestMapping("/user")
+public class UserController {
+
+    @Autowired
+    private UserService userService;
+
+    @GetMapping("/userInfo")
+    public ResponseResult userInfo(){
+        return userService.userInfo();
+    }
+}
+```
+UserService增加方法定义
+```
+public interface UserService extends IService<User> {
+
+    ResponseResult userInfo();
+
+}
+```
+UserServiceImpl实现userInfo方法
+```
+    @Override
+    public ResponseResult userInfo() {
+        //获取当前用户id
+        Long userId = SecurityUtils.getUserId();
+        //根据用户id查询用户信息
+        User user = getById(userId);
+        //封装成UserInfoVo
+        UserInfoVo vo = BeanCopyUtils.copyBean(user,UserInfoVo.class);
+        return ResponseResult.okResult(vo);
+    }
+```
+SecurityConfig配置该接口必须认证后才能访问  
+```
+   @Override
+   这是一个注解，用于指示该方法是一个覆盖父类或接口的方法。
+    protected void configure(HttpSecurity http) throws Exception 
+    这是一个覆盖父类的方法，用于配置Spring Security的HttpSecurity对象，该对象定义了Web应用程序的安全性配置。
+    {
+        http
+                //关闭csrf
+                .csrf().disable()
+                这里禁用了跨站请求伪造（CSRF）防护功能，即禁用了Spring Security默认提供的CSRF保护。
+                //不通过Session获取SecurityContext
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                这里设置了会话管理策略为STATELESS，即不创建和使用会话，每个请求都是独立的，不依赖于会话状态。
+                .and()
+                .authorizeRequests()
+                这里开始配置请求的授权规则。
+                // 对于登录接口 允许匿名访问
+                .antMatchers("/login").anonymous()
+                允许匿名访问 "/login" 接口，即登录接口不需要认证即可访问。
+                //注销接口需要认证才能访问
+                .antMatchers("/logout").authenticated()
+                "/logout" 接口需要进行认证（登录）才能访问。
+            	//个人信息接口必须登录后才能访问
+                .antMatchers("/user/userInfo").authenticated()
+                "/user/userInfo" 接口需要进行认证（登录）才能访问，用于访问个人信息。
+                对于除上述接口外的所有请求，都不需要认证即可访问。
+                // 除上面外的所有请求全部不需要认证即可访问
+                .anyRequest().permitAll();
+                配置了异常处理器，指定了处理身份验证失败和访问被拒绝的情况的自定义处理器。
+        //配置异常处理器
+        http.exceptionHandling()
+                .authenticationEntryPoint(authenticationEntryPoint)
+                .accessDeniedHandler(accessDeniedHandler);
+        //关闭默认的注销功能
+        http.logout().disable();
+        禁用了默认的注销功能。
+        //把jwtAuthenticationTokenFilter添加到SpringSecurity的过滤器链中
+        http.addFilterBefore(jwtAuthenticationTokenFilter, UsernamePasswordAuthenticationFilter.class);
+        添加了一个名为jwtAuthenticationTokenFilter的自定义过滤器，并将其添加到Spring Security的过滤器链中，在用户名密码认证过滤器之前执行。
+        //启用了跨域资源共享（CORS）支持，允许跨域
+        http.cors();
+    }
+```
+这段代码的主要作用是配置Spring Security的安全性规则，包括认证和授权规则，禁用了某些功能，添加了自定义过滤器，并启用了跨域支持。
+
+**以下是基于上述代码实现的用户信息查询功能的流程：**
+
+1. 用户访问个人信息页面，此时需要用户登录才能访问。
+
+2. 用户点击“个人信息”按钮，前端通过HTTP GET请求访问控制器UserController中的userInfo接口。
+
+3. UserController将请求转发给服务层实现类UserService中的userInfo方法。
+
+4. UserService中的userInfo方法使用SecurityUtils.getUserId()方法获取当前登录用户的id，并根据该id查询数据库中的用户信息。
+
+5. 将查询结果封装成UserInfoVo对象，并通过响应结果ResponseResult返回给UserController。
+
+6. UserController将响应结果ResponseResult返回给前端，前端根据响应结果显示用户信息。
+
+7. 如果用户未登录，则访问“个人信息”页面时会被Spring Security拦截，返回401未授权错误；如果用户登录但没有权限访问该页面，则会被拦截，返回403禁止访问错误。
+
+8. 在Spring Security的配置类中，通过配置HttpSecurity来设置请求的访问权限，其中"/user/userInfo"接口必须登录后才能访问。
+
+9. 在Spring Security的配置类中，通过配置JwtAuthenticationTokenFilter来实现JWT认证，并将其添加到SpringSecurity的过滤器链中。
+
+总的来说，上述代码实现了用户信息查询功能，并通过Spring Security实现了对用户访问权限的控制，并使用JWT认证实现了用户身份的验证。
+
+### 3.14 头像上传接口
+#### 3.14.1 需求
+​ 在个人中心点击编辑的时候可以上传头像图片。上传完头像后，可以用于更新个人信息接口。
+
+#### 3.14.2 OSS
+为什么要使用OSS
+​ 因为如果把图片视频等文件上传到自己的应用的Web服务器，在读取图片的时候会占用比较多的资源。影响应用服务器的性能。
+​ 所以我们一般使用OSS(Object Storage Service对象存储服务)存储图片或视频。
+
+### 3.14.3 接口设计
+
+**GET：用于从服务器获取资源，是一种幂等且安全的请求方法。它通过查询字符串或路径参数将请求参数附加到URL中，并将请求参数放在请求头中发送给服务器。
+POST：用于向服务器提交数据，是一种非幂等且不安全的请求方法。它将请求参数放在请求体中发送给服务器。**
+请求方式:POST	
+请求地址:/upload	
+请求头:需要token
+参数：
+​ img,值为要上传的文件
+请求头：
+​ Content-Type ：multipart/form-data;
+
+响应格式:
+{
+    "code": 200,
+    "data": "文件访问链接",
+    "msg": "操作成功"
+}
+3.14.3 代码实现
+```
+//用于处理上传文件的请求
+@RestController
+public class UploadController {
+    @Autowired
+    private UploadService uploadService;
+
+    @PostMapping("/upload")
+    //接收一个MultipartFile类型的参数img，表示要上传的文件。该方法调用了uploadService的uploadImg方法，并将img作为参数传递。
+    public ResponseResult uploadImg(MultipartFile img){
+        return uploadService.uploadImg(img);
+    }
+}
+```
+UploadService定义了一个uploadImg方法，用于上传文件。
+```
+public interface UploadService {
+    ResponseResult uploadImg(MultipartFile img);
+}
+```
+```
+@Service
+@Data
+@ConfigurationProperties(prefix = "oss")
+public class OssUploadService implements UploadService {
+    @Override
+    public ResponseResult uploadImg(MultipartFile img) {
+        //判断文件类型
+        //获取原始文件名
+        String originalFilename = img.getOriginalFilename();
+        //对原始文件名进行判断,如果不是‘.png'格式，则抛出一个自定义的异常
+        if(!originalFilename.endsWith(".png")){
+            throw new SystemException(AppHttpCodeEnum.FILE_TYPE_ERROR);
+        }
+
+        //如果判断通过上传文件到OSS。在上传之前，根据原始文件名生成一个路径。
+        String filePath = PathUtils.generateFilePath(originalFilename);
+        String url = uploadOss(img,filePath);//  2099/2/3/wqeqeqe.png
+        return ResponseResult.okResult(url);
+    }
+    //使用七牛云的Java SDK，创建一个上传管理器（UploadManager），并配置AccessKey、SecretKey和Bucket等信息。
+    private String accessKey;
+    private String secretKey;
+    private String bucket;
+
+    private String uploadOss(MultipartFile imgFile, String filePath){
+        //构造一个带指定 Region 对象的配置类,并使用Region.autoRegion()指定一个区域对象作为参数，用于指定上传的OSS区域。
+        Configuration cfg = new Configuration(Region.autoRegion());
+        //...其他参数参考类注释,将上述配置类作为参数传递给构造函数
+        UploadManager uploadManager = new UploadManager(cfg);
+        //默认不指定key的情况下，以文件内容的hash值作为文件名
+        String key = filePath;
+        //使用七牛云的Auth类创建一个认证对象，传入accessKey和secretKey进行身份验证。
+        try {
+            InputStream inputStream = imgFile.getInputStream();
+            Auth auth = Auth.create(accessKey, secretKey);
+            //用认证对象的uploadToken方法生成上传凭证upToken，指定要上传的bucket。
+            String upToken = auth.uploadToken(bucket);
+            try {
+            //在try块中，调用uploadManager的put方法进行文件上传，传入输入流、文件名（key）和上传凭证（upToken），以及其他参数为null。
+                Response response = uploadManager.put(inputStream,key,upToken,null, null);
+                //解析上传成功的结果，通过Gson库将响应体字符串解析为DefaultPutRet对象。DefaultPutRet对象包含上传文件的key和hash。
+                DefaultPutRet putRet = new Gson().fromJson(response.bodyString(), DefaultPutRet.class);
+                System.out.println(putRet.key);
+                System.out.println(putRet.hash);
+                return "http://r7yxkqloa.bkt.clouddn.com/"+key;
+            } catch (QiniuException ex) {
+                Response r = ex.response;
+                System.err.println(r.toString());
+                //如果上传过程中出现异常，会捕获QiniuException，并打印异常信息。
+                try {
+                    System.err.println(r.bodyString());
+                } catch (QiniuException ex2) {
+                    //ignore
+                }
+            }
+        } catch (Exception ex) {
+            //ignore
+        }
+        //如果发生其他异常，会忽略并返回字符串"www"。
+        return "www";
+    }
+}
+```
+PathUtils  
+**PathUtils类提供了一个静态方法generateFilePath，用于根据文件名生成日期路径、UUID作为文件名，并保留文件的后缀名。**
+```
+/**
+ * @Author 三更  B站： https://space.bilibili.com/663528522
+ */
+public class PathUtils {
+
+    public static String generateFilePath(String fileName){
+        //根据日期生成路径   2022/1/15/
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd/");
+        String datePath = sdf.format(new Date());
+        //uuid作为文件名
+        String uuid = UUID.randomUUID().toString().replaceAll("-", "");
+        //后缀和文件后缀一致
+        int index = fileName.lastIndexOf(".");
+        // test.jpg -> .jpg
+        String fileType = fileName.substring(index);
+        return new StringBuilder().append(datePath).append(uuid).append(fileType).toString();
+    }
+}
+```
+
+### 3.15 更新个人信息接口
+#### 3.15.1 需求
+​ 在编辑完个人资料后点击保存会对个人资料进行更新。
+
+#### 3.15.2 接口设计
+​
+请求方式:PUT
+请求地址:/user/userInfo
+请求头:需要token请求头
+
+请求体中json格式数据：
+
+{
+    "avatar":"https://sg-blog-oss.oss-cn-beijing.aliyuncs.com/2022/01/31/948597e164614902ab1662ba8452e106.png",
+    "email":"23412332@qq.com",
+    "id":"1",
+    "nickName":"sg333",
+    "sex":"1"
+}
+响应格式:
+
+{
+	"code":200,
+	"msg":"操作成功"
+}
+#### 3.15.3 代码实现
+UserController
+```
+    @PutMapping("/userInfo")
+    public ResponseResult updateUserInfo(@RequestBody User user){
+        return userService.updateUserInfo(user);
+    }
+```
+UserService
+```
+ResponseResult updateUserInfo(User user);
+```
+UserServiceImpl
+```
+    @Override
+    public ResponseResult updateUserInfo(User user) {
+        updateById(user);
+        return ResponseResult.okResult();
+    }
+```
+```
+package com.baomidou.mybatisplus.extension.service;
+default boolean updateById(T entity) {
+        return SqlHelper.retBool(this.getBaseMapper().updateById(entity));
+    }
+```
+
+### 5.10 权限控制
+#### 5.10.1 需求
+
+实现流程简述：  
+在SecurityConfig中启用全局方法级别的权限控制。  
+在UserDetailsServiceImpl中根据用户名加载用户信息，并根据用户类型获取对应的权限列表。  
+LoginUser扩展了用户信息类，新增了权限列表属性。  
+PermissionService提供了判断用户权限的方法。  
+CategoryController中的export方法通过@PreAuthorize注解进行权限控制，只有具有特定权限的用户才能访问该接口。  
+在方法内部实现导出数据的逻辑，并返回给前端。   
+
+​ 需要对导出分类的接口做权限控制。
+
+sg 
+eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkZGJkNjM5MWJiZTA0NmMzOTc4NDg1ZTcxNWQ3YjQ0MSIsInN1YiI6IjEiLCJpc3MiOiJzZyIsImlhdCI6MTY2MjI0NDE4NywiZXhwIjoxNjYyMzMwNTg3fQ.z4JGwFN3lWyVbOCbhikCe-O4D6SvCQFEE5eQY3jDJkw
+
+sangeng
+eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0Y2I1ZjhmMTc0Mjk0NzM0YjI4Y2M1NTQzYjQ2Yjc1YyIsInN1YiI6IjYiLCJpc3MiOiJzZyIsImlhdCI6MTY2MjI0NDQzMywiZXhwIjoxNjYyMzMwODMzfQ.yEkbyGYXBp5ndnyq-3acdgpvqx2mnI8B9fK9f3Y6Jco
+
+#### 5.10.2 代码实现
+SecurityConfig
+```
+@EnableGlobalMethodSecurity(prePostEnabled = true)
+```
+UserDetailsServiceImpl  
+用于根据用户名加载用户信息。根据用户名查询数据库中的用户信息，并根据用户类型获取对应的权限列表。
+```
+@Service
+public class UserDetailsServiceImpl implements UserDetailsService {
+
+    @Autowired
+    private UserMapper userMapper;
+
+    @Autowired
+    private MenuMapper menuMapper;
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        //根据用户名查询用户信息
+        LambdaQueryWrapper<User> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(User::getUserName,username);
+        User user = userMapper.selectOne(queryWrapper);
+        //判断是否查到用户  如果没查到抛出异常
+        if(Objects.isNull(user)){
+            throw new RuntimeException("用户不存在");
+        }
+        //返回用户信息
+        if(user.getType().equals(SystemConstants.ADMAIN)){
+            List<String> list = menuMapper.selectPermsByUserId(user.getId());
+            return new LoginUser(user,list);
+        }
+        return new LoginUser(user,null);
+    }
+}
+```
+LoginUser  
+是UserDetails的自定义实现类，扩展了List<String> permissions属性，用于保存用户的权限列表。  
+增加属性
+```
+private List<String> permissions;
+```
+PermissionService
+hasPermisson
+```
+@Service("ps")
+//PermissionService：提供了hasPermission方法，用于判断当前用户是否具有特定权限。如果当前用户是超级管理员，则直接返回true，否则获取当前登录用户的权限列表，并判断是否包含指定的权限
+public class PermissionService {
+
+    /**
+     * 判断当前用户是否具有permission
+     * @param permission 要判断的权限
+     * @return
+     */
+    public boolean hasPermission(String permission){
+        //如果是超级管理员  直接返回true
+        if(SecurityUtils.isAdmin()){
+            return true;
+        }
+        //否则  获取当前登录用户所具有的权限列表 如何判断是否存在permission
+        List<String> permissions = SecurityUtils.getLoginUser().getPermissions();
+        return permissions.contains(permission);
+    }
+}
+```
+CategoryController
+该控制器类中的export方法使用了@PreAuthorize注解，用于在方法级别进行权限控制。使用@PreAuthorize("@ps.hasPermission('content:category:export')")表达式，表示只有具有content:category:export权限的用户才能访问该接口。
+在方法内部，首先设置下载文件的请求头。
+然后获取需要导出的数据，并将其转换为需要导出的格式（ExcelCategoryVo）。
+最后，将数据写入Excel并通过响应流返回给前端。
+```
+    @PreAuthorize("@ps.hasPermission('content:category:export')")
+    @GetMapping("/export")
+    public void export(HttpServletResponse response){
+        try {
+            //设置下载文件的请求头
+            WebUtils.setDownLoadHeader("分类.xlsx",response);
+            //获取需要导出的数据
+            List<Category> categoryVos = categoryService.list();
+
+            List<ExcelCategoryVo> excelCategoryVos = BeanCopyUtils.copyBeanList(categoryVos, ExcelCategoryVo.class);
+            //把数据写入到Excel中
+            EasyExcel.write(response.getOutputStream(), ExcelCategoryVo.class).autoCloseStream(Boolean.FALSE).sheet("分类导出")
+                    .doWrite(excelCategoryVos);
+
+        } catch (Exception e) {
+            //如果出现异常也要响应json
+            ResponseResult result = ResponseResult.errorResult(AppHttpCodeEnum.SYSTEM_ERROR);
+            WebUtils.renderString(response, JSON.toJSONString(result));
+        }
+    }
+```
+  
+### 5.11 文章列表
+#### 5.10.1 需求
+  
+​ 为了对文章进行管理，需要提供文章列表，
+
+​ 在后台需要分页查询文章功能，要求能根据标题和摘要模糊查询。
+
+​ 注意：不能把删除了的文章查询出来
+
+#### 5.10.2 接口设计
+请求方式:Get
+请求路径:/content/article/list
+是否需求token头:是
+Query格式请求
+参数：
+pageNum: 页码
+pageSize: 每页条数
+title：文章标题
+summary：文章摘要
+
+响应格式：
+```
+{
+	"code":200,
+	"data":{
+		"rows":[
+			{
+				"categoryId":"1",
+				"content":"嘻嘻嘻嘻嘻嘻",
+				"createTime":"2022-01-24 07:20:11",
+				"id":"1",
+				"isComment":"0",
+				"isTop":"1",
+				"status":"0",
+				"summary":"SpringSecurity框架教程-Spring Security+JWT实现项目级前端分离认证授权",
+				"thumbnail":"https://sg-blog-oss.oss-cn-beijing.aliyuncs.com/2022/01/31/948597e164614902ab1662ba8452e106.png",
+				"title":"SpringSecurity从入门到精通",
+				"viewCount":"161"
+			}
+		],
+		"total":"1"
+	},
+	"msg":"操作成功"
+}
+```
+
+#### 5.10.3代码实现  
+articleController
+```
+ @PostMapping
+    public ResponseResult add(@RequestBody AddArticleDto article){
+        return articleService.add(article);
+    }
+  ```
+  ArticltService
+  ```
+    ResponseResult add(AddArticleDto article);
+  ```
+  ArticleServiceImpl
+  ```
+  @Override
+  //这也是一个注解，用于启用事务管理。在这个方法中，所有的数据库操作将会被包裹在一个事务中，保证数据的一致性和完整性。
+  @Transactional
+  //创建一个Article对象，并保存到数据库中,这个方法使用了一个工具类BeanCopyUtils来将articleDto对象的属性值复制到Article对象中。它将articleDto转换为Article类型的对象。
+    public ResponseResult add(AddArticleDto articleDto) {
+        //添加 博客
+        Article article = BeanCopyUtils.copyBean(articleDto, Article.class);
+  //这是一个保存数据的方法，将article对象保存到数据库中。
+        save(article);
+
+//这一行代码使用了Java 8的流（Stream）操作来处理articleDto中的标签数据。它首先获取articleDto对象中的标签列表，然后使用map操作将每个标签ID映射为一个新的ArticleTag对象，其中包含了博客ID和标签ID。最后，使用collect操作将这些ArticleTag对象收集到一个列表中。
+        List<ArticleTag> articleTags = articleDto.getTags().stream()
+                .map(tagId -> new ArticleTag(article.getId(), tagId))
+                .collect(Collectors.toList());
+
+        //添加 博客和标签的关联
+        //这是一个保存数据的方法，它接受一个ArticleTag对象列表并将其保存到数据库中。这个方法可能是调用一个名为articleTagService的服务类的方法。
+        //这是一个返回成功响应的方法，它会创建一个表示成功的ResponseResult对象并返回。
+        articleTagService.saveBatch(articleTags);
+        return ResponseResult.okResult();
+    }
+  ```
+  
+### 5.12修改文章
+  
+#### 5.12.1 需求
+​ 点击文章列表中的修改按钮可以跳转到写博文页面。回显示该文章的具体信息。
+
+​ 用户可以在该页面修改文章信息。点击更新按钮后修改文章。
+
+#### 5.12.2 分析
+​ 这个功能的实现首先需要能够根据文章id查询文章的详细信息这样才能实现文章的回显。
+
+​ 如何需要提供更新文章的接口。
+
+#### 5.12.3 接口设计
+##### 5.12.3.1 查询文章详情接口
+请求方式	请求路径	是否需求token头
+Get	content/article/{id}	是
+Path格式请求参数：
+
+id: 文章id
+
+响应格式：
+```
+{
+	"code":200,
+	"data":{
+		"categoryId":"1",
+		"content":"xxxxxxx",
+		"createBy":"1",
+		"createTime":"2022-08-28 15:15:46",
+		"delFlag":0,
+		"id":"10",
+		"isComment":"0",
+		"isTop":"1",
+		"status":"0",
+		"summary":"啊实打实",
+		"tags":[
+			"1",
+			"4",
+			"5"
+		],
+		"thumbnail":"https://sg-blog-oss.oss-cn-beijing.aliyuncs.com/2022/08/28/7659aac2b74247fe8ebd9e054b916dbf.png",
+		"title":"委屈饿驱蚊器",
+		"updateBy":"1",
+		"updateTime":"2022-08-28 15:15:46",
+		"viewCount":"0"
+	},
+	"msg":"操作成功"
+}
+```
+##### 5.12.3.2 更新文章接口
+请求方式	请求路径	是否需求token头
+PUT	content/article	是
+请求体参数格式：
+```
+{
+    "categoryId":"1",
+    "content":"![Snipaste_20220228_224837.png](https://sg-blog-oss.oss-cn-beijing.aliyuncs.com/2022/08/28/f3938a0368c540ee909ba7f7079a829a.png)\n\n# 十大\n## 时代的",
+    "createBy":"1",
+    "createTime":"2022-08-28 15:15:46",
+    "delFlag":0,
+    "id":"10",
+    "isComment":"0",
+    "isTop":"1",
+    "status":"0",
+    "summary":"啊实打实2",
+    "tags":[
+        "1",
+        "4",
+        "5"
+    ],
+    "thumbnail":"https://sg-blog-oss.oss-cn-beijing.aliyuncs.com/2022/08/28/7659aac2b74247fe8ebd9e054b916dbf.png",
+    "title":"委屈饿驱蚊器",
+    "updateBy":"1",
+    "updateTime":"2022-08-28 15:15:46",
+    "viewCount":"0"
+}
+```
+响应格式：
+```
+{
+	"code":200,
+	"msg":"操作成功"
+}
+```
+##### 代码实现
+  ```
+  @Override
+    public void edit(ArticleDto articleDto) {
+  //这个方法使用了一个工具类BeanCopyUtils来将articleDto对象的属性值复制到Article对象中。它将articleDto转换为Article类型的对象。
+        Article article = BeanCopyUtils.copyBean(articleDto, Article.class);
+        //更新博客信息,这是一个更新数据的方法，它会根据article对象的ID更新数据库中相应的记录。
+        updateById(article);
+        //删除原有的 标签和博客的关联,这行代码创建了一个LambdaQueryWrapper对象，用于构建数据库查询条件。这个对象将用于删除原有的标签和博客的关联。
+        LambdaQueryWrapper<ArticleTag> articleTagLambdaQueryWrapper = new LambdaQueryWrapper<>();
+  //这行代码设置查询条件，要求ArticleTag对象的articleId属性与article.getId()相等。
+        articleTagLambdaQueryWrapper.eq(ArticleTag::getArticleId,article.getId());
+  //这是一个删除数据的方法，它接受一个LambdaQueryWrapper对象作为参数，并根据查询条件删除数据库中的记录。这个方法可能是调用一个名为articleTagService的服务类的方法。
+        articleTagService.remove(articleTagLambdaQueryWrapper);
+        //添加新的博客和标签的关联信息
+        List<ArticleTag> articleTags = articleDto.getTags().stream()
+                .map(tagId -> new ArticleTag(articleDto.getId(), tagId))
+  //这一行代码使用了Java 8的流（Stream）操作来处理articleDto中的标签数据。它首先获取articleDto对象中的标签列表，然后使用map操作将每个标签ID映射为一个新的ArticleTag对象，其中包含了博客ID和标签ID。最后，使用collect操作将这些ArticleTag对象收集到一个列表中。
+                .collect(Collectors.toList());
+  //这是一个保存数据的方法，它接受一个ArticleTag对象列表并将其保存到数据库中。这个方法可能是调用一个名为articleTagService的服务类的方法。
+        articleTagService.saveBatch(articleTags);
+
+    }
+  ```
+### 5.13 删除文章
+#### 5.13.1 需求
+​ 点击文章后面的删除按钮可以删除该文章
+
+​ 注意：是逻辑删除不是物理删除
+
+#### 5.13.2 接口设计
+​
+
+请求方式	请求路径	是否需求token头
+DELETE	content/article/{id}	是
+Path请求参数：
+
+id：要删除的文章id
+
+响应格式：
+
+{
+	"code":200,
+	"msg":"操作成功"
+}
+#### 代码实现
+  
+  ```
+  default boolean removeById(Serializable id) {
+        return SqlHelper.retBool(this.getBaseMapper().deleteById(id));
+    }
+  ```
+  
+### 5.32 新增友链
+#### 5.32.1 需求
+​ 需要新增友链功能
+
+#### 5.32.2 接口设计
+请求方式	请求路径	是否需求token头
+POST	/content/link	是
+请求体：
+
+{
+    "name":"sda",
+    "description":"weqw",
+    "address":"wewe",
+    "logo":"weqe",
+    "status":"2"
+}
+响应格式：
+
+{
+	"code":200,
+	"msg":"操作成功"
+}
+### 5.33 修改友链
+#### 5.33.1 需求
+​ 需要提供修改友链的功能
+
+#### 5.33.2 接口设计
+##### 5.33.2.1 根据id查询友联
+请求方式	请求路径	是否需求token头
+Get	content/link/{id}	是
+Path格式请求参数：
+
+id: 友链id
+
+响应格式：
+
+{
+	"code":200,
+	"data":{
+		"address":"wewe",
+		"description":"weqw",
+		"id":"4",
+		"logo":"weqe",
+		"name":"sda",
+		"status":"2"
+	},
+	"msg":"操作成功"
+}
+##### 5.33.2.2 修改友链
+请求方式	请求路径	是否需求token头
+PUT	/content/link	是
+请求体：
+
+{
+    "address":"https://www.qq.com",
+    "description":"dada2",
+    "id":"2",
+    "logo":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fn1.itc.cn%2Fimg8%2Fwb%2Frecom%2F2016%2F05%2F10%2F146286696706220328.PNG&refer=http%3A%2F%2Fn1.itc.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1646205529&t=f942665181eb9b0685db7a6f59d59975",
+    "name":"sda",
+    "status":"0"
+}
+响应格式：
+
+{
+	"code":200,
+	"msg":"操作成功"
+}
+### 5.34 删除友链
+#### 5.34.1 需求
+​ 删除某个友链（逻辑删除）
+
+#### 5.34.2 接口设计
+请求方式	请求路径	是否需求token头
+DELETE	/content/link/{id}	是
+Path请求参数：
+
+id：要删除的友链id
+
+响应格式：
+
+{
+	"code":200,
+	"msg":"操作成功"
+}  
+在Controller中定义以下：
+```
+  package com_bjut.blog.controller;
+
+import com_bjut.blog.domain.ResponseResult;
+import com_bjut.blog.domain.entity.Link;
+import com_bjut.blog.domain.vo.PageVo;
+import com_bjut.blog.service.LinkService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+
+@RestController
+@RequestMapping("/content/link")
+public class LinkController {
+    @Autowired
+    private LinkService linkService;
+
+    /**
+     * 获取友链列表
+     */
+    @GetMapping("/list")
+    public ResponseResult list(Link link, Integer pageNum, Integer pageSize)
+    {
+        PageVo pageVo = linkService.selectLinkPage(link,pageNum,pageSize);
+        return ResponseResult.okResult(pageVo);
+    }
+
+    @PostMapping
+    public ResponseResult add(@RequestBody Link link){
+        linkService.save(link);
+        return ResponseResult.okResult();
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseResult delete(@PathVariable Long id){
+        linkService.removeById(id);
+        return ResponseResult.okResult();
+    }
+
+    @PutMapping
+    public ResponseResult edit(@RequestBody Link link){
+        linkService.updateById(link);
+        return ResponseResult.okResult();
+    }
+
+    @PutMapping("/changeLinkStatus")
+    public ResponseResult changeLinkStatus(@RequestBody Link link){
+        linkService.updateById(link);
+        return ResponseResult.okResult();
+    }
+
+
+
+    @GetMapping(value = "/{id}")
+    public ResponseResult getInfo(@PathVariable(value = "id")Long id){
+        Link link = linkService.getById(id);
+        return ResponseResult.okResult(link);
+    }
+}
+```
+在Service中定义：
+  ```
+  package com_bjut.blog.controller;
+
+import com_bjut.blog.domain.ResponseResult;
+import com_bjut.blog.domain.entity.Link;
+import com_bjut.blog.domain.vo.PageVo;
+import com_bjut.blog.service.LinkService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+
+@RestController
+@RequestMapping("/content/link")
+public class LinkController {
+    @Autowired
+    private LinkService linkService;
+
+    /**
+     * 获取友链列表
+     */
+    @GetMapping("/list")
+    public ResponseResult list(Link link, Integer pageNum, Integer pageSize)
+    {
+        PageVo pageVo = linkService.selectLinkPage(link,pageNum,pageSize);
+        return ResponseResult.okResult(pageVo);
+    }
+//以下都是定义在IService里的方法
+    @PostMapping
+    public ResponseResult add(@RequestBody Link link){
+        linkService.save(link);
+        return ResponseResult.okResult();
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseResult delete(@PathVariable Long id){
+        linkService.removeById(id);
+        return ResponseResult.okResult();
+    }
+
+    @PutMapping
+    public ResponseResult edit(@RequestBody Link link){
+        linkService.updateById(link);
+        return ResponseResult.okResult();
+    }
+
+    @PutMapping("/changeLinkStatus")
+    public ResponseResult changeLinkStatus(@RequestBody Link link){
+        linkService.updateById(link);
+        return ResponseResult.okResult();
+    }
+
+
+
+    @GetMapping(value = "/{id}")
+    public ResponseResult getInfo(@PathVariable(value = "id")Long id){
+        Link link = linkService.getById(id);
+        return ResponseResult.okResult(link);
+    }
+}
+```
