@@ -1,13 +1,13 @@
 <template>
   <div class="dashboard-container">
     <div class="dashboard-text">
-      BJUT-个人博客管理系统
+      珍不珍稀博客管理系统
     </div>
     <div>
-      全部烧掉：<a href="https://github.com/loftTin/springboots/">请进</a>   焚尸炉
+      · 欢迎关注我们的guihub仓库：<a href="https://github.com/loftTin/springboots/">https://github.com/loftTin/springboots/</a>
     </div>
     <div>
-      快来被烧掉;D
+      · 自然是最有耐心，它用曲线规划山海，用山海孕育生命
     </div>
   </div>
 </template>

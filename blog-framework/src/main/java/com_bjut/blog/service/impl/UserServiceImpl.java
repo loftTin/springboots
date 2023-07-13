@@ -71,12 +71,12 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
             throw new SystemException(AppHttpCodeEnum.NICKNAME_NOT_NULL);
         }
         //对数据进行是否存在的判断
-        if(userNameExist(user.getUserName())){
-            throw new SystemException(AppHttpCodeEnum.USERNAME_EXIST);
-        }
-        if(nickNameExist(user.getNickName())){
-            throw new SystemException(AppHttpCodeEnum.NICKNAME_EXIST);
-        }
+//        if(userNameExist(user.getUserName())){
+//            throw new SystemException(AppHttpCodeEnum.USERNAME_EXIST);
+//        }
+//        if(nickNameExist(user.getNickName())){
+//            throw new SystemException(AppHttpCodeEnum.NICKNAME_EXIST);
+//        }
         //...
         //对密码进行加密
         String encodePassword = passwordEncoder.encode(user.getPassword());
@@ -161,16 +161,16 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         userRoleService.saveBatch(sysUserRoles);
     }
 
-    private boolean nickNameExist(String nickName) {
-        LambdaQueryWrapper<User> queryWrapper = new LambdaQueryWrapper<>();
-        queryWrapper.eq(User::getNickName,nickName);
-        return count(queryWrapper)>0;
-    }
-
-    private boolean userNameExist(String userName) {
-        LambdaQueryWrapper<User> queryWrapper = new LambdaQueryWrapper<>();
-        queryWrapper.eq(User::getUserName,userName);
-        return count(queryWrapper)>0;
-    }
+//    private boolean nickNameExist(String nickName) {
+//        LambdaQueryWrapper<User> queryWrapper = new LambdaQueryWrapper<>();
+//        queryWrapper.eq(User::getNickName,nickName);
+//        return count(queryWrapper)>0;
+//    }
+//
+//    private boolean userNameExist(String userName) {
+//        LambdaQueryWrapper<User> queryWrapper = new LambdaQueryWrapper<>();
+//        queryWrapper.eq(User::getUserName,userName);
+//        return count(queryWrapper)>0;
+//    }
 }
 

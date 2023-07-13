@@ -52,7 +52,7 @@
       <h1>@赞赏记录：</h1>
       <el-table :data="tableData" border style="width: 100%">
         <el-table-column prop="payTime" label="日期" align="center"></el-table-column>
-        <el-table-column prop="name" label="赞赏人" align="center"></el-table-column>
+        <el-table-column prop="name" label="" align="center"></el-table-column>
         <el-table-column prop="money" label="金额" align="center"></el-table-column>
       </el-table>
     </section>
@@ -68,18 +68,18 @@ export default {
       tableData: [
         {
           //赞赏数据
-          "payTime": "2021-10-23",
-          "name": "智障少女欢乐多",
+          "payTime": "2077-07-07",
+          "name": "anon",
           "money": "188"
         },
         {
-          "payTime": "2021-10-28",
-          "name": "刺猬",
+          "payTime": "2012-2-31",
+          "name": "happycat",
           "money": "50"
         },
         {
-          "payTime": "2021-11-03",
-          "name": "迅捷小鹿",
+          "payTime": "2023-13-12",
+          "name": "BJUTer",
           "money": "30"
         },
       ],

@@ -55,12 +55,6 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
 
         List<Article> articles = page.getRecords();
         //bean拷贝
-//        List<HotArticleVo> articleVos = new ArrayList<>();
-//        for (Article article : articles) {
-//            HotArticleVo vo = new HotArticleVo();
-//            BeanUtils.copyProperties(article,vo);
-//            articleVos.add(vo);
-//        }
         List<HotArticleVo> vs = BeanCopyUtils.copyBeanList(articles, HotArticleVo.class);
         return ResponseResult.okResult(vs);
     }
@@ -86,11 +80,6 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
         articles.stream()
                 .map(article -> article.setCategoryName(categoryService.getById(article.getCategoryId()).getName()))
                 .collect(Collectors.toList());
-//        //articleId去查询articleName进行设置
-//        for (Article article : articles) {
-//            Category category = categoryService.getById(article.getCategoryId());
-//            article.setCategoryName(category.getName());
-//        }
 
         //封装查询结果
         List<ArticleListVo> articleListVos = BeanCopyUtils.copyBeanList(page.getRecords(), ArticleListVo.class);

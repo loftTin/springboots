@@ -4,58 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4c81c08-a263-4cda-af05-07cf1908de15" name="变更" comment="a version with login/logout/admin">
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/LinkController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/MenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/RoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/dto/AddTagDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/dto/ArticleDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/dto/ChangeRoleStatusDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/dto/EditTagDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/RoleMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/ArticleVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/MenuTreeVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/MenuVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/RoleMenuTreeSelectVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/UserInfoAndRoleIdsVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/UserVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/RoleMenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/UserRoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/RoleMenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/UserRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/RoleMenuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/UserRoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/utils/SystemConverter.java" afterDir="false" />
+    <list default="true" id="f4c81c08-a263-4cda-af05-07cf1908de15" name="变更" comment="a full version with login/logout/admin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/TagController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/TagController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/MenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/MenuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/RoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/LinkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/LinkService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/MenuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/ArticleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/LinkServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/LinkServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/MenuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/RoleServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/resources/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/resources/mapper/MenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/resources/mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/utils/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/utils/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-vue-admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue-admin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-vue-admin/src/layout/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue-admin/src/layout/components/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-vue-admin/src/views/dashboard/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue-admin/src/views/dashboard/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-vue-admin/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue-admin/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-vue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-vue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-vue/src/components/reward.vue" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue/src/components/reward.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-vue/src/components/rightlist.vue" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue/src/components/rightlist.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-vue/src/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue/src/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-vue/static/img/qq.png" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue/static/img/qq.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/blog-blog/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/blog-framework/target/" />
     <ignored path="$PROJECT_DIR$/blog-admin/target/" />
+    <ignored path="E:\desktop\小学期2\blog\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,21 +72,12 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/filter/JwtAuthenticationTokenFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/MenuServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/ArticleServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="69" column="46" lean-forward="true" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
+            <state relative-caret-position="424">
+              <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,23 +86,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.5.3.1/mybatis-plus-core-3.5.3.1-sources.jar!/com/baomidou/mybatisplus/core/conditions/interfaces/Func.java">
+        <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="330" column="5" lean-forward="true" selection-start-line="330" selection-start-column="5" selection-end-line="330" selection-end-column="5" />
+            <state relative-caret-position="304">
+              <caret line="160" column="42" lean-forward="true" selection-start-line="160" selection-start-column="42" selection-end-line="160" selection-end-column="42" />
               <folding>
-                <element signature="e#8180#8181#0" expanded="true" />
-                <element signature="e#8236#8237#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog-admin/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -174,17 +126,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/PermissionService.java" />
-        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/UserDetailsServiceImpl.java" />
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/constants/SystemConstants.java" />
-        <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/blog-admin/package-lock.json" />
         <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/job/updataViewCountJob.java" />
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/ArticleDto.java" />
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/ArticleVo.java" />
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/ArticleService.java" />
         <option value="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/ArticleController.java" />
-        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/ArticleServiceImpl.java" />
         <option value="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/CategoryController.java" />
         <option value="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/RoleController.java" />
         <option value="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/UserController.java" />
@@ -220,11 +168,15 @@
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/UserRoleServiceImpl.java" />
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/UserRoleService.java" />
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/UserService.java" />
-        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/User.java" />
         <option value="$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/TagController.java" />
         <option value="$PROJECT_DIR$/blog-admin/pom.xml" />
         <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/MenuServiceImpl.java" />
+        <option value="$PROJECT_DIR$/blog-vue-admin/src/views/dashboard/index.vue" />
+        <option value="$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/utils/JwtUtil.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/ArticleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/UserServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -279,9 +231,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="938" />
-    <option name="height" value="1088" />
+    <option name="x" value="-9" />
+    <option name="width" value="939" />
+    <option name="height" value="1089" />
   </component>
   <component name="ProjectId" id="2RjNpoMCpdVbflv7rOTD8FJKNAq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -356,17 +308,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -383,17 +324,91 @@
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-blog" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-blog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="job" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="runner" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
@@ -471,7 +486,123 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="aspect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
@@ -517,23 +648,6 @@
               <item name="com_bjut" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -625,7 +739,7 @@
     </option>
     <option name="contentProportion" value="0.19400856" />
   </component>
-  <component name="RunManager" selected="Spring Boot.BlogAdminApplication">
+  <component name="RunManager" selected="Spring Boot.BlogApplication">
     <configuration name="All in blog" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="bjut_blog" />
       <option name="PACKAGE_NAME" value="" />
@@ -833,7 +947,8 @@
       <workItem from="1688631061836" duration="6717000" />
       <workItem from="1688708447634" duration="789000" />
       <workItem from="1689044338231" duration="24175000" />
-      <workItem from="1689128724212" duration="14513000" />
+      <workItem from="1689128724212" duration="14818000" />
+      <workItem from="1689157015456" duration="6409000" />
     </task>
     <task id="LOCAL-00001" summary="a version without login/logout/admin">
       <created>1688348728885</created>
@@ -961,7 +1076,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689148044606</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="a full version with login/logout/admin">
+      <created>1689151948461</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1689151948461</updated>
+    </task>
+    <task id="LOCAL-00020" summary="a full version with login/logout/admin">
+      <created>1689157208151</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1689157208151</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -985,7 +1114,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164100000" />
+    <option name="totallyTimeSpent" value="170814000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1002,7 +1131,7 @@
     <layout>
       <window_info id="Repositories" order="0" weight="0.19300699" />
       <window_info id="设计器" order="1" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.26573426" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.21048951" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="4" />
       <window_info id="Image Layers" order="5" />
@@ -1010,7 +1139,7 @@
       <window_info id="UI Designer" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info id="Web" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="0" visible="true" weight="0.15281501" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="0" sideWeight="0.77482516" visible="true" weight="0.11394102" />
       <window_info anchor="bottom" id="调试" order="1" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.44772118" />
@@ -1020,9 +1149,9 @@
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" sideWeight="0.49720278" weight="0.31903484" />
       <window_info anchor="bottom" id="Spring" order="9" weight="0.3297587" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.633378" weight="0.47184986" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.633378" weight="0.34852546" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.14475524" side_tool="true" weight="0.31233245" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.22517483" side_tool="true" weight="0.54959786" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.4986014" weight="0.35254693" />
@@ -1036,7 +1165,7 @@
       <window_info anchor="right" id="Maven" order="4" weight="0.42450494" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Database" order="7" weight="0.13566433" />
+      <window_info anchor="right" id="Database" order="7" weight="0.13496503" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" />
@@ -1126,7 +1255,8 @@
     <MESSAGE value="a version with login/logout/admin,picture adder added" />
     <MESSAGE value="a version with login/logout/admin, and BUGs" />
     <MESSAGE value="a version with login/logout/admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="a version with login/logout/admin" />
+    <MESSAGE value="a full version with login/logout/admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="a full version with login/logout/admin" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
@@ -1138,322 +1268,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/RoleMenuTreeSelectVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/utils/SystemConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/resources/mapper/MenuMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.5.3.1/mybatis-plus-extension-3.5.3.1-sources.jar!/com/baomidou/mybatisplus/extension/service/impl/ServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
-          <folding>
-            <element signature="e#2040#2041#0" expanded="true" />
-            <element signature="e#2073#2074#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/MenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/Tag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/RoleMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/UserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/UserInfoAndRoleIdsVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/vo/UserVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/dto/AddTagDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/dto/EditTagDto.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/dto/ChangeRoleStatusDto.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/RoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/resources/mapper/RoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/ArticleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/CategoryMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/CommentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/LinkMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/MenuMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/RoleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/RoleMenuMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/TagMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/UserRoleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="62" lean-forward="true" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/ArticleTagMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/LinkService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/MenuService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/RoleMenuService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/RoleMenuServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/RoleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/SystemLoginServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-146">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/TagServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1723">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/UserDetailsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/UserRoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/UserRoleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="45" lean-forward="true" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="533">
           <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="140" column="13" lean-forward="true" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1495,20 +1313,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/filter/JwtAuthenticationTokenFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-admin/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.5.3.1/mybatis-plus-core-3.5.3.1.jar!/com/baomidou/mybatisplus/core/conditions/interfaces/Func.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -1531,10 +1335,323 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blog-admin/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-vue-admin/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-vue-admin/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-576">
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-vue-admin/src/views/dashboard/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="38" column="83" lean-forward="true" selection-start-line="38" selection-start-column="83" selection-end-line="38" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/filter/JwtAuthenticationTokenFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/runner/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="46" column="34" lean-forward="true" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/annotation/SystemLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/config/aspect/LogAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/config/FastJsonRedisSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/config/MybatisPlusConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-314">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/constants/SystemConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/utils/BeanCopyUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/exception/SystemException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/enums/AppHttpCodeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-113">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/dto/ChangeRoleStatusDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/dto/ArticleDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/ArticleTagServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-380">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/CommentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-987">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/MenuServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="69" column="46" lean-forward="true" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
+        <state relative-caret-position="-141">
+          <caret line="73" column="13" lean-forward="true" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/OssUploadService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-260">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/RoleMenuServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/UserDetailsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/UserRoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/handler/mybatisplus/MyMetaObjectHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/handler/exception/GlobalExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/handler/security/AccessDeniedHandlerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/controller/BlogLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/utils/JwtUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/mapper/ArticleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/BlogLoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/domain/entity/LoginUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-admin/src/main/java/com_bjut/blog/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/handler/security/AuthenticationEntryPointImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/BlogLoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-blog/src/main/java/com_bjut/blog/filter/JwtAuthenticationTokenFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="160" column="42" lean-forward="true" selection-start-line="160" selection-start-column="42" selection-end-line="160" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-framework/src/main/java/com_bjut/blog/service/impl/ArticleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

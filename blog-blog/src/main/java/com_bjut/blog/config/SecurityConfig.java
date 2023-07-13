@@ -42,9 +42,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 // 对于登录接口 允许匿名访问
                 .antMatchers("/login").anonymous()
-                //注销接口需要认证才能访问
+                // 注销接口需要认证才能访问
                 .antMatchers("/logout").authenticated()
-                //个人信息接口必须登录后才能访问
+                // 个人信息接口必须登录后才能访问
                 .antMatchers("/user/userInfo").authenticated()
                 // 这里前端没携带token，需要改前端
                 // .antMatchers("/upload").authenticated()
